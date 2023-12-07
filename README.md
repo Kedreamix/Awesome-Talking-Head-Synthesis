@@ -238,15 +238,15 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 ## Star History
 
-[![Star History Chart](https://star-history.com/Kedreamix/Awesome-Talking-Head-Synthesis&type=Date)](https://star-history.com/#Kedreamix/Awesome-Talking-Head-Synthesis&Date)
-
-
+[![Star History Chart](https://api.star-history.com/svg?repos=Kedreamix/Awesome-Talking-Head-Synthesis&type=Date)](https://star-history.com/#Kedreamix/Awesome-Talking-Head-Synthesis&Date)
 
 
 
 [1]: https://github.com/YunjinPark/awesome_talking_face_generation
 [2]: https://github.com/LTT-O/Awesome-Talking-Head-Generation
+
 [3]: https://github.com/JosephPai/Awesome-Talking-Face "Greate Project"
+
 [4]: https://github.com/weishida01/Awesome-Talking-Face-Generation
 [5]: https://github.com/harlanhong/awesome-talking-head-generation "nice job"
 [6]:https://github.com/Curated-Awesome-Lists/awesome-ai-talking-heads "full of tools"
