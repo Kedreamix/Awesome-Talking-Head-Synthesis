@@ -20,6 +20,18 @@ Most papers are linked to PDFs on "arXiv" or journal/conference websites 📚. H
 
 
 
+**2023.12 Update** 📆
+
+Thank you to https://github.com/Curated-Awesome-Lists/awesome-ai-talking-heads, I have added some of its contents, such as `Tools & Software` and `Slides & Presentations`. 🙏 I hope this will be helpful.😊
+
+If you have any feedback or ideas on extending this aggregated resource, please open an issue or PR - community contributions are vital to advancing this shared knowledge. 🤝
+
+Let's keep pushing forward to recreate ever more realistic digital human faces! 💪 We've come so far but still have a long way to go. With continued research 🔬 and collaboration, I'm sure we'll get there! 🤗
+
+Please feel free to star ⭐ and share this repo if you find it a valuable resource. Your support helps motivate me to keep maintaining and improving it. 🥰 Let me know if you have any other questions!
+
+
+
 ## Datasets
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/841257d9dee74547bbd4f717794a9492.png#pic_center)
@@ -80,6 +92,7 @@ Most papers are linked to PDFs on "arXiv" or journal/conference websites 📚. H
 | 2023 | [EmoTalk] [EmoTalk: Speech-Driven Emotional Disentanglement for 3D Face Animation](https://arxiv.org/abs/2303.11089) | ICCV 2023             | [Code](https://github.com/ZiqiaoPeng/EmoTalk)                |                                                              | 3D,Emotion      |
 | 2023 | [Emotional Talking Head Generation based on Memory-Sharing and Attention-Augmented Networks](https://arxiv.org/abs/2306.03594) | InterSpeech 2023      |                                                              |                                                              | Emotion         |
 | 2023 | [DINet] [DINet: Deformation Inpainting Network for Realistic Face Visually Dubbing on High Resolution Video](https://fuxivirtualhuman.github.io/pdf/AAAI2023_FaceDubbing.pdf) | AAAI 2023             | [Code](https://github.com/MRzzm/DINet)                       | -                                                            |                 |
+| 2023 | [StyleTalk] [StyleTalk: One-shot Talking Head Generation with Controllable Speaking Styles](https://arxiv.org/abs/2301.01081) | AAAI 2023             | [Code](https://github.com/FuxiVirtualHuman/styletalk)        | -                                                            | Style           |
 | 2023 | [High-fidelity Generalized Emotional Talking Face Generation with Multi-modal Emotion Space Learning](https://arxiv.org/abs/2305.02572) | CVPR 2023             | -                                                            | -                                                            | Emotion         |
 | 2023 | [StyleSync] [StyleSync: High-Fidelity Generalized and Personalized Lip Sync in Style-based Generator](https://arxiv.org/pdf/2305.05445.pdf) | CVPR 2023             | [Code](https://github.com/guanjz20/StyleSync)                | [Project](https://hangz-nju-cuhk.github.io/projects/StyleSync) | -               |
 | 2023 | [TalkLip] [TalkLip: Seeing What You Said - Talking Face Generation Guided by a Lip Reading Expert](https://arxiv.org/pdf/2303.17480.pdf) | CVPR 2023             | [Code](https://github.com/Sxjdwang/TalkLip)                  | -                                                            | -               |
@@ -139,6 +152,7 @@ Most papers are linked to PDFs on "arXiv" or journal/conference websites 📚. H
 | Year | Title                                                        | Conference/Journal | Code                                                  | Project                                                    | Keywords   |
 | ---- | ------------------------------------------------------------ | ------------------ | ----------------------------------------------------- | ---------------------------------------------------------- | ---------- |
 | 2024 | [SyncTalk] [SyncTalk: The Devil😈 is in the Synchronization for Talking Head Synthesis](https://arxiv.org/abs/2311.17590) | CVPR 2024?         | [Code](https://github.com/ZiqiaoPeng/SyncTalk)        | [Project](https://ziqiaopeng.github.io/synctalk/)          | 😈          |
+| 2024 | [DT-NeRF] [DT-NeRF: Decomposed Triplane-Hash Neural Radiance Fields for High-Fidelity Talking Portrait Synthesis](https://arxiv.org/pdf/2309.07752) | ICASSP 2024        | -                                                     | -                                                          | ER-NeRF    |
 | 2023 | [ER-NeRF] [Efficient Region-Aware Neural Radiance Fields for High-Fidelity Talking Portrait Synthesis](https://openaccess.thecvf.com/content/ICCV2023/papers/Li_Efficient_Region-Aware_Neural_Radiance_Fields_for_High-Fidelity_Talking_Portrait_Synthesis_ICCV_2023_paper.pdf) | ICCV 2023          | [Code](https://github.com/Fictionarry/ER-NeRF)        | [Project](https://fictionarry.github.io/ER-NeRF/)          | Tri-plane  |
 | 2023 | [LipNeRF] [LipNeRF: What is the right feature space to lip-sync a NeRF?](https://www.amazon.science/publications/lipnerf-what-is-the-right-feature-space-to-lip-sync-a-nerf) | FG 2023            | Code                                                  | [Project](https://aggelinacha.github.io/LipNeRF/)          | Wav2lip    |
 | 2023 | [SD-NeRF] [SD-NeRF: Towards Lifelike Talking Head Animation via Spatially-adaptive Dual-driven NeRFs](https://ieeexplore.ieee.org/document/10229247) | IEEE 2023          | -                                                     | -                                                          |            |
@@ -187,6 +201,34 @@ Most papers are linked to PDFs on "arXiv" or journal/conference websites 📚. H
 ---
 
 
+
+## Tools & Software
+
+| Tool/Resource                                                | Description                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [LUCIA](https://sourceforge.net/projects/lucia/)             | Development of a MPEG-4 Talking Head Engine. 💻               |
+| [Yepic Studio](https://www.g2.com/products/yepic-studio/reviews) | Create and dub talking head-style videos in minutes without expensive equipment. 🎥 |
+| [Mel McGee's Talkbots](https://sourceforge.net/projects/talkbots/) | A complete multi-browser, multi-platform talking head application in SVG suitable for web sites or as an avatar. 🗣️ |
+| [face3D_chung](https://sourceforge.net/projects/face3dchung/) | Create 3D character avatar head objects with texture from a single photo for your games. 🎮 |
+| [CrazyTalk](https://www.g2.com/products/crazytalk/reviews)   | Exciting features for 3D head creation and automation. 🤪     |
+| [tts avatar free download - SourceForge](https://sourceforge.net/directory/?q=tts%20avatar) | Mel McGee's Talkbots is a complete multi-browser, multi-platform talking head. (🔧👄) |
+| [Verbatim AI - Product Information, Latest Updates, and Reviews 2023](https://www.producthunt.com/products/verbatim-ai) | A simple yet powerful API to generate AI "talking head" videos in near real-time with Verbatim AI. Add interest, intrigue, and dynamism to your chat bots! (🔧👄) |
+| [Best Open Source BASIC 3D Modeling Software](https://sourceforge.net/directory/3d-modeling/basic/) | Includes talk3D_chung, a small example using obj models created with face3D_chung, and speak3D_chung_dll, a dll to load and display face3D_chung talking avatars. (🛠️🎭) |
+| [DVDStyler / Discussion / Help: ffmpeg-vbr or internal](https://sourceforge.net/p/dvdstyler/discussion/318795/thread/82dcb647/) | Talking heads would get a bitrate which is unnecessarily high while using DVDStyler. (🛠️👄) |
+| [puffin web browser free download - SourceForge](https://sourceforge.net/directory/lisp/?q=puffin+web+browser) | Mel McGee's Talkbots is a complete multi-browser, multi-platform talking head. (🔧👄) |
+| [12 best AI video generators to use in 2023 Free and paid \|Product ...](https://www.producthunt.com/stories/best-ai-video-generators-free) | Whether you’re an entrepreneur, small business owner, or run a large company, AI video generators make it super easy to create high-quality videos from scratch. (🔧🎥) |
+
+---
+
+## Slides & Presentations
+
+| Presentation Title                                           | Description                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [Few-Shot Adversarial Learning of Realistic Neural Talking Head Models](https://www.slideshare.net/ssuserc9d82a/paper-reviewfewshot-adversarial-learning-of-realistic-neural-talking-head-models) | Presentation reviewing the few-shot adversarial learning of realistic neural talking head models. |
+| [Nethania Michelle's Character](https://www.slideshare.net/ZULHICZARARIETINARBU/nethania-michelles-character) | PPT: Presentation discussing the improvement of a 3D talking head for use in an avatar of a virtual meeting room. |
+| [Presenting you: Top tips on presenting with Prezi Video – Prezi](https://support.prezi.com/hc/en-us/articles/360036679953-Presenting-you-Top-tips-on-presenting-with-Prezi-Video) | Article providing top tips for presenting with Prezi Video.  |
+| [Research Presentation](https://pt.slideshare.net/willg_36/research-presentation-presentation-956726) | PPT: Resident Research Presentation Slide Deck.              |
+| [Adding narration to your presentation (using Prezi Video) – Prezi](https://support.prezi.com/hc/en-us/articles/360038281894-Adding-narration-to-your-presentation-using-Prezi-Video-) | Learn how to add narration to your Prezi presentation with Prezi Video. |
 
 
 
