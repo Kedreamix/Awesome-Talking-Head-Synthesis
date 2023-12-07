@@ -7,6 +7,8 @@
   - [Text-driven](#text-driven)
   - [NeRF \& 3D](#nerf--3d)
   - [Metrics](#metrics)
+  - [Tools \& Software](#tools--software)
+  - [Slides \& Presentations](#slides--presentations)
 
 This repository organizes papers, codes and resources related to generative adversarial networks (GANs) 🤗 and neural radiance fields (NeRF) 🎨, with a main focus on image-driven and audio-driven talking head synthesis papers and released codes. 👤
 
