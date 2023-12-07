@@ -113,21 +113,21 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 | 2021 | [PC-AVS] [PC-AVS: Pose-Controllable Talking Face Generation by Implicitly Modularized Audio-Visual Representation](https://arxiv.org/abs/2104.11116) | CVPR 2021             | [Code](https://github.com/Hangz-nju-cuhk/Talking-Face_PC-AVS) | [Project](https://hangz-nju-cuhk.github.io/projects/PC-AVS)  | -               |
 | 2021 | [IATS] [Imitating Arbitrary Talking Style for Realistic Audio-Driven Talking Face Synthesis](https://arxiv.org/abs/2111.00203) | ACM MM 2021           | -                                                            | -                                                            | -               |
 | 2021 | [Speech2Talking-Face] [Speech2Talking-Face: Inferring and Driving a Face with Synchronized Audio-Visual Representation](https://www.ijcai.org/proceedings/2021/0141.pdf) | IJCAI 2021            | -                                                            | -                                                            | -               |
-| 2021 | [FAU] [Talking Head Generation with Audio and Speech Related Facial Action Units](https://arxiv.org/pdf/2110.09951.pdf) | arxiv 2021            | -                                                            | -                                                            | AU              |
+| 2021 | [FAU] [Talking Head Generation with Audio and Speech Related Facial Action Units](https://arxiv.org/pdf/2110.09951.pdf) | BMVC 2021             | -                                                            | -                                                            | AU              |
 | 2021 | [EVP] [Audio-Driven Emotional Video Portraits](https://openaccess.thecvf.com/content/CVPR2021/papers/Ji_Audio-Driven_Emotional_Video_Portraits_CVPR_2021_paper.pdf) | CVPR 2021             | [Code](https://github.com/jixinya/EVP)                       | -                                                            | Emotion         |
 | 2021 | [IATS] [IATS: Imitating Arbitrary Talking Style for Realistic Audio-Driven Talking Face Synthesis](https://dl.acm.org/doi/pdf/10.1145/3474085.3475280) | ACM Multimedia 2021   | -                                                            | -                                                            | -               |
-| 2020 | [Wav2Lip] [A Lip Sync Expert Is All You Need for Speech to Lip Generation In The Wild](http://arxiv.org/abs/2008.10010) | ACM Multimedia 2020   | [Code](https://github.com/Rudrabha/Wav2Lip)                  | [Project](http://cvit.iiit.ac.in/research/projects/cvit-projects/a-lip-sync-expert-is-all-you-need-for-speech-to-lip-generation-in-the-wild/) | -               |
+| 2020 | [Wav2Lip] [A Lip Sync Expert Is All You Need for Speech to Lip Generation In The Wild](http://arxiv.org/pdf/2008.10010.pdf) | ACM Multimedia 2020   | [Code](https://github.com/Rudrabha/Wav2Lip)                  | [Project](http://cvit.iiit.ac.in/research/projects/cvit-projects/a-lip-sync-expert-is-all-you-need-for-speech-to-lip-generation-in-the-wild/) | -               |
 | 2020 | [RhythmicHead] [Talking-head Generation with Rhythmic Head Motion](https://arxiv.org/pdf/2007.08547v1.pdf) | ECCV 2020             | [Code](https://github.com/lelechen63/Talking-head-Generation-with-Rhythmic-Head-Motion) | -                                                            | -               |
-| 2020 | [MakeItTalk] [Speaker-Aware Talking-Head Animation](https://arxiv.org/abs/2006.09661) | SIGGRAPH Asia 2020    | [Code](https://github.com/yzhou359/MakeItTalk)               | [Project](https://people.umass.edu/~yangzhou/MakeItTalk/)    | -               |
-| 2020 | [Neural Voice Puppetry] [Audio-driven Facial Reenactment](https://arxiv.org/abs/1912.05566) | ECCV 2020             | -                                                            | [Project](https://justusthies.github.io/posts/neural-voice-puppetry/) | -               |
+| 2020 | [MakeItTalk] [Speaker-Aware Talking-Head Animation](https://arxiv.org/pdf/2006.09661.pdf) | SIGGRAPH Asia 2020    | [Code](https://github.com/yzhou359/MakeItTalk)               | [Project](https://people.umass.edu/~yangzhou/MakeItTalk/)    | -               |
+| 2020 | [Neural Voice Puppetry] [Audio-driven Facial Reenactment](https://arxiv.org/pdf/1912.05566.pdf) | ECCV 2020             | -                                                            | [Project](https://justusthies.github.io/posts/neural-voice-puppetry/) | -               |
 | 2020 | [MEAD] [A Large-scale Audio-visual Dataset for Emotional Talking-face Generation](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123660698.pdf) | ECCV 2020             | [Code](https://github.com/uniBruce/Mead)                     | [Project](https://wywu.github.io/projects/MEAD/MEAD.html)    | -               |
 | 2020 | [Realistic Speech-Driven Facial Animation with GANs](https://arxiv.org/pdf/1906.06337.pdf) | IJCV 2020             | -                                                            | -                                                            | -               |
-| 2019 | [DAVS] [Talking Face Generation by Adversarially Disentangled Audio-Visual Representation](https://arxiv.org/abs/1807.07860) | AAAI 2019             | [Code](https://github.com/Hangz-nju-cuhk/Talking-Face-Generation-DAVS) | -                                                            | -               |
+| 2019 | [DAVS] [Talking Face Generation by Adversarially Disentangled Audio-Visual Representation](https://arxiv.org/pdf/1807.07860.pdf) | AAAI 2019             | [Code](https://github.com/Hangz-nju-cuhk/Talking-Face-Generation-DAVS) | -                                                            | -               |
 | 2019 | [ATVGnet] [Hierarchical Cross-modal Talking Face Generation with Dynamic Pixel-wise Loss](https://www.cs.rochester.edu/~cxu22/p/cvpr2019_facegen_paper.pdf) | CVPR 2019             | [Code](https://github.com/lelechen63/ATVGnet)                | -                                                            | -               |
 | 2018 | [Lip Movements Generation at a Glance](https://openaccess.thecvf.com/content_ECCV_2018/papers/Lele_Chen_Lip_Movements_Generation_ECCV_2018_paper.pdf) | ECCV 2018             | [Code](https://github.com/lelechen63/3d_gan)                 | -                                                            | -               |
-| 2018 | [VisemeNet] [Audio-Driven Animator-Centric Speech Animation](https://arxiv.org/abs/1805.09488) | SIGGRAPH 2018         | -                                                            | -                                                            | -               |
+| 2018 | [VisemeNet] [Audio-Driven Animator-Centric Speech Animation](https://arxiv.org/pdf/1805.09488.pdf) | SIGGRAPH 2018         | -                                                            | -                                                            | -               |
 | 2017 | [Synthesizing Obama] [Learning Lip Sync From Audio](https://grail.cs.washington.edu/projects/AudioToObama/siggraph17_obama.pdf) | SIGGRAPH 2017         | -                                                            | [Project](https://grail.cs.washington.edu/projects/AudioToObama/) | -               |
-| 2017 | [You Said That?] [Synthesising Talking Faces From Audio](https://arxiv.org/abs/1705.02966) | IJCV 2019             | [Code](https://github.com/joonson/yousaidthat)               | -                                                            | -               |
+| 2017 | [You Said That?] [Synthesising Talking Faces From Audio](https://arxiv.org/abs/1705.02966) | BMVC 2019             | [Code](https://github.com/joonson/yousaidthat)               | -                                                            | -               |
 | 2017 | [Audio-Driven Facial Animation by Joint End-to-End Learning of Pose and Emotion](https://users.aalto.fi/~laines9/publications/karras2017siggraph_paper.pdf) | SIGGRAPH 2017         | -                                                            | -                                                            | -               |
 | 2017 | [A Deep Learning Approach for Generalized Speech Animation](https://home.ttic.edu/~taehwan/taylor_etal_siggraph2017.pdf) | SIGGRAPH 2017         | -                                                            | -                                                            | -               |
 | 2016 | [LRW] [Lip Reading in the Wild](https://www.robots.ox.ac.uk/~vgg/publications/2016/Chung16/chung16.pdf) | ACCV 2016             | -                                                            | -                                                            | -               |
@@ -222,6 +222,8 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 ---
 
+
+
 ## Slides & Presentations
 
 | Presentation Title                                           | Description                                                  |
@@ -232,11 +234,19 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 | [Research Presentation](https://pt.slideshare.net/willg_36/research-presentation-presentation-956726) | PPT: Resident Research Presentation Slide Deck.              |
 | [Adding narration to your presentation (using Prezi Video) – Prezi](https://support.prezi.com/hc/en-us/articles/360038281894-Adding-narration-to-your-presentation-using-Prezi-Video-) | Learn how to add narration to your Prezi presentation with Prezi Video. |
 
+---
+
+## Star History
+
+[![Star History Chart](https://star-history.com/Kedreamix/Awesome-Talking-Head-Synthesis&type=Date)](https://star-history.com/#Kedreamix/Awesome-Talking-Head-Synthesis&Date)
+
+
+
 
 
 [1]: https://github.com/YunjinPark/awesome_talking_face_generation
 [2]: https://github.com/LTT-O/Awesome-Talking-Head-Generation
-[3]: https://github.com/JosephPai/Awesome-Talking-Face
+[3]: https://github.com/JosephPai/Awesome-Talking-Face "Greate Project"
 [4]: https://github.com/weishida01/Awesome-Talking-Face-Generation
-[5]: https://github.com/harlanhong/awesome-talking-head-generation
-[6]:https://github.com/Curated-Awesome-Lists/awesome-ai-talking-heads
+[5]: https://github.com/harlanhong/awesome-talking-head-generation "nice job"
+[6]:https://github.com/Curated-Awesome-Lists/awesome-ai-talking-heads "full of tools"
