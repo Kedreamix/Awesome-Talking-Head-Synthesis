@@ -79,11 +79,24 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 
 
+## Funny Work
+
+| Year | Title                                                        | Code                                                         | Project                                                      | Keywords                  |
+| ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------- |
+| 2024 | [Audio2Photoreal] [From Audio to Photoreal Embodiment: Synthesizing Humans in Conversations](https://arxiv.org/pdf/2401.01885.pdf) | [Code](https://github.com/facebookresearch/audio2photoreal/) | [Project](https://people.eecs.berkeley.edu/~evonne_ng/projects/audio2photoreal/#) | Photoreal                 |
+| 2024 | [Animate Anyone] [Animate Anyone: Consistent and Controllable Image-to-Video Synthesis for Character Animation](https://arxiv.org/pdf/2311.17117.pdf) | [Code](https://github.com/HumanAIGC/AnimateAnyone)           | [Project](https://humanaigc.github.io/animate-anyone/)       | 🔥Animate (阿里科目三驱动) |
+| 2024 | [3DGAN] [What You See Is What You GAN: Rendering Every Pixel for High-Fidelity Geometry in 3D GANs](https://research.nvidia.com/labs/nxp/wysiwyg/media/WYSIWYG.pdf) |                                                              | [Project](https://research.nvidia.com/labs/nxp/wysiwyg/)     | 🔥Nvidia                   |
+
+---
+
+
+
 ## Audio-driven
 
 | Year | Title                                                        | Conference/Journal    | Code                                                         | Project                                                      | Keywords        |
 | ---- | ------------------------------------------------------------ | --------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | --------------- |
-| 2024 | [DREAM-Talk: Diffusion-based Realistic Emotional Audio-driven Method for   Single Image Talking Face Generation](http://arxiv.org/abs/2312.13578v1) | Arix 2024             |                                                              | [Project](https://magic-research.github.io/dream-talk/)      | Emotion         |
+| 2024 | [AdaMesh] [AdaMesh: Personalized Facial Expressions and Head Poses for Adaptive   Speech-Driven 3D Facial Animation](http://arxiv.org/abs/2310.07236v2) | Arix 2024             | [Code](https://github.com/adamesh/adamesh)                   | [Project](https://adamesh.github.io)                         | 3D,Mesh         |
+| 2024 | [DREAM-Talk] [DREAM-Talk: Diffusion-based Realistic Emotional Audio-driven Method for Single Image Talking Face Generation](http://arxiv.org/abs/2312.13578v1) | Arix 2024             |                                                              | [Project](https://magic-research.github.io/dream-talk/)      | Emotion         |
 | 2024 | [AE-NeRF] [AE-NeRF: Audio Enhanced Neural Radiance Field for Few Shot Talking Head Synthesis](http://arxiv.org/abs/2312.10921v1) | AAAI 2024             |                                                              |                                                              |                 |
 | 2024 | [VectorTalker] [VectorTalker: SVG Talking Face Generation with Progressive Vectorisation](http://arxiv.org/abs/2312.11568v1) | Arix 2024             |                                                              |                                                              |                 |
 | 2024 | [Mimic] [Mimic: Speaking Style Disentanglement for Speech-Driven 3D Facial Animation](http://arxiv.org/abs/2312.10877v1) | AAAI 2024             |                                                              |                                                              | 3D              |
@@ -164,6 +177,9 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 | Year | Title                                                        | Conference/Journal | Code                                                     | Project                                                     | Keywords            |
 | ---- | ------------------------------------------------------------ | ------------------ | -------------------------------------------------------- | ----------------------------------------------------------- | ------------------- |
+| 2024 | [Gaussian Shadow Casting for Neural Characters](http://arxiv.org/abs/2401.06116v1) | Arxiv 2024         |                                                          |                                                             | 🔥Gaussian Splatting |
+| 2024 | [4DGen] [4DGen: Grounded 4D Content Generation with Spatial-temporal Consistency](http://arxiv.org/abs/2312.17225v1) | Arxiv 2024         |                                                          | [Project](https://vita-group.github.io/4DGen/ )             | 🔥Gaussian Splatting |
+| 2024 | [3DGAN] [What You See Is What You GAN: Rendering Every Pixel for High-Fidelity Geometry in 3D GANs](https://research.nvidia.com/labs/nxp/wysiwyg/media/WYSIWYG.pdf) | Arxiv 2024         |                                                          | [Project](https://research.nvidia.com/labs/nxp/wysiwyg/)    |                     |
 | 2024 | [3DGS-Avatar] [3DGS-Avatar: Animatable Avatars via Deformable 3D Gaussian Splatting](http://arxiv.org/abs/2312.09228v2) | Arxiv 2024         | [Code](https://github.com/mikeqzy/3dgs-avatar-release)   | [Project](https://neuralbodies.github.io/3DGS-Avatar)       | 🔥Gaussian Splatting |
 | 2024 | [R2-Talker] [R2-Talker: Realistic Real-Time Talking Head Synthesis with Hash Grid Landmarks Encoding and Progressive Multilayer Conditioning](http://arxiv.org/abs/2312.05572v1) | Arxiv 2024         |                                                          |                                                             | based-RAD-NeRF      |
 | 2024 | [GaussianHead] [GaussianHead: Impressive 3D Gaussian-based Head Avatars with Dynamic Hybrid Neural Field](https://arxiv.org/abs/2312.01632) | Arxiv 2024         | [Code](https://github.com/chiehwangs/gaussian-head)      |                                                             | 🔥Gaussian Splatting |
