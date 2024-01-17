@@ -3,6 +3,7 @@
 - [Awesome-Talking-Head-Synthesis](#awesome-talking-head-synthesis)
   - [Datasets](#datasets)
   - [Survey](#survey)
+  - [Funny Work](#funny-work)
   - [Audio-driven](#audio-driven)
   - [Text-driven](#text-driven)
   - [NeRF \& 3D \& Gaussian Splatting](#nerf--3d--gaussian-splatting)
@@ -69,6 +70,8 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 | Year | Title                                                        | Conference/Journal |
 | ---- | ------------------------------------------------------------ | ------------------ |
+| 2024 | [A Survey on 3D Gaussian Splatting](https://arxiv.org/pdf/2401.03890.pdf) 3DGS🔥🔥🔥**on going** | arXiv 2024         |
+| 2024 | [Neural Radiance Fields: Past, Present, and Future](https://arxiv.org/pdf/2304.10050.pdf)  NeRF🔥🔥🔥 **Amazing 413 pages** | arXiv 2024         |
 | 2023 | [From Pixels to Portraits: A Comprehensive Survey of Talking Head Generation Techniques and Applications](https://arxiv.org/abs/2308.16041) | arXiv 2023         |
 | 2023 | [Human-Computer Interaction System: A Survey of Talking-Head Generation](https://www.mdpi.com/2079-9292/12/1/218) | IEEE               |
 | 2023 | [Talking human face generation: A survey](https://dl.acm.org/doi/10.1016/j.eswa.2023.119678) | ACM                |
@@ -98,6 +101,7 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 | 2024 | [AdaMesh] [AdaMesh: Personalized Facial Expressions and Head Poses for Adaptive   Speech-Driven 3D Facial Animation](http://arxiv.org/abs/2310.07236v2) | Arix 2024             | [Code](https://github.com/adamesh/adamesh)                   | [Project](https://adamesh.github.io)                         | 3D,Mesh         |
 | 2024 | [DREAM-Talk] [DREAM-Talk: Diffusion-based Realistic Emotional Audio-driven Method for Single Image Talking Face Generation](http://arxiv.org/abs/2312.13578v1) | Arix 2024             |                                                              | [Project](https://magic-research.github.io/dream-talk/)      | Emotion         |
 | 2024 | [AE-NeRF] [AE-NeRF: Audio Enhanced Neural Radiance Field for Few Shot Talking Head Synthesis](http://arxiv.org/abs/2312.10921v1) | AAAI 2024             |                                                              |                                                              |                 |
+| 2024 | [VectorTalker] [VectorTalker: SVG Talking Face Generation with Progressive Vectorisation](http://arxiv.org/abs/2312.11568v1) | Arix 2024             |                                                              |                                                              | SVG             |
 | 2024 | [VectorTalker] [VectorTalker: SVG Talking Face Generation with Progressive Vectorisation](http://arxiv.org/abs/2312.11568v1) | Arix 2024             |                                                              |                                                              |                 |
 | 2024 | [Mimic] [Mimic: Speaking Style Disentanglement for Speech-Driven 3D Facial Animation](http://arxiv.org/abs/2312.10877v1) | AAAI 2024             |                                                              |                                                              | 3D              |
 | 2024 | [DreamTalk] [DreamTalk: When Expressive Talking Head Generation Meets Diffusion Probabilistic Models](http://arxiv.org/abs/2312.09767v1) | Arix 2024             | [Code](https://github.com/damo-vilab/i2vgen-xl)              | [Project](https://dreamtalk-project.github.io)               | Diffusion       |
