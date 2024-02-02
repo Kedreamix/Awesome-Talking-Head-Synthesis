@@ -70,6 +70,7 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 | Year | Title                                                        | Conference/Journal |
 | ---- | ------------------------------------------------------------ | ------------------ |
+| 2024 | [Advances in 3D Generation: A Survey](https://arxiv.org/abs/2401.17807) | arXiv 2024         |
 | 2024 | [A Survey on 3D Gaussian Splatting](https://arxiv.org/pdf/2401.03890.pdf) 3DGS🔥🔥🔥**on going** | arXiv 2024         |
 | 2024 | [Neural Radiance Fields: Past, Present, and Future](https://arxiv.org/pdf/2304.10050.pdf)  NeRF🔥🔥🔥 **Amazing 413 pages** | arXiv 2024         |
 | 2023 | [From Pixels to Portraits: A Comprehensive Survey of Talking Head Generation Techniques and Applications](https://arxiv.org/abs/2308.16041) | arXiv 2023         |
@@ -183,6 +184,8 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 | Year | Title                                                        | Conference/Journal | Code                                                     | Project                                                     | Keywords                            |
 | ---- | ------------------------------------------------------------ | ------------------ | -------------------------------------------------------- | ----------------------------------------------------------- | ----------------------------------- |
+| 2024 | [ViCA-NeRF] [ViCA-NeRF: View-Consistency-Aware 3D Editing of Neural Radiance Fields](http://arxiv.org/abs/2402.00864v1) | NIPS 2023          | [Code](https://github.com/Dongjiahua/VICA-NeRF)          | [Project](https://github.com/Dongjiahua/VICA-NeRF)          | 3D Edit                             |
+| 2024 | [CoSSegGaussians] [CoSSegGaussians: Compact and Swift Scene Segmenting 3D Gaussians with Dual Feature Fusion](http://arxiv.org/abs/2401.05925v3) | Arxiv 2024         |                                                          | [Project](https://david-dou.github.io/CoSSegGaussians)      | Segmentic                           |
 | 2024 | [Sketch2NeRF] [Sketch2NeRF: Multi-view Sketch-guided Text-to-3D Generation](http://arxiv.org/abs/2401.14257v1) | Arxiv 2024         |                                                          |                                                             | Text to 3D                          |
 | 2024 | [CoSSegGaussians] [CoSSegGaussians: Compact and Swift Scene Segmenting 3D Gaussians with Dual Feature Fusion](http://arxiv.org/abs/2401.05925v2) | Arxiv 2024         |                                                          | [Project](https://david-dou.github.io/CoSSegGaussians/)     | 🔥Gaussian Splatting, Segmentation   |
 | 2024 | [UltrAvatar] [UltrAvatar: A Realistic Animatable 3D Avatar Diffusion Model with Authenticity Guided Textures](http://arxiv.org/abs/2401.11078v1) | Arxiv 2024         |                                                          | [Project](http://usrc-sea.github.io/UltrAvatar/)            | Diffusion,Avatar                    |
