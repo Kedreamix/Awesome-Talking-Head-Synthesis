@@ -70,6 +70,7 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 | Year | Title                                                        | Conference/Journal |
 | ---- | ------------------------------------------------------------ | ------------------ |
+| 2024 | [3D Gaussian as a New Vision Era: A Survey](https://arxiv.org/abs/2402.07181) 3DGS🔥🔥🔥 | arXiv 2024         |
 | 2024 | [Advances in 3D Generation: A Survey](https://arxiv.org/abs/2401.17807) | arXiv 2024         |
 | 2024 | [A Survey on 3D Gaussian Splatting](https://arxiv.org/pdf/2401.03890.pdf) 3DGS🔥🔥🔥**on going** | arXiv 2024         |
 | 2024 | [Neural Radiance Fields: Past, Present, and Future](https://arxiv.org/pdf/2304.10050.pdf)  NeRF🔥🔥🔥 **Amazing 413 pages** | arXiv 2024         |
