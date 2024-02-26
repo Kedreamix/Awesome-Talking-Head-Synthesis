@@ -70,6 +70,7 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 | Year | Title                                                        | Conference/Journal |
 | ---- | ------------------------------------------------------------ | ------------------ |
+| 2024 | [How NeRFs and 3D Gaussian Splatting are Reshaping SLAM: a Survey](https://arxiv.org/abs/2402.13255) 3DGS+SLAM🔥🔥🔥 | arXiv 2024         |
 | 2024 | [3D Gaussian as a New Vision Era: A Survey](https://arxiv.org/abs/2402.07181) 3DGS🔥🔥🔥 | arXiv 2024         |
 | 2024 | [Advances in 3D Generation: A Survey](https://arxiv.org/abs/2401.17807) | arXiv 2024         |
 | 2024 | [A Survey on 3D Gaussian Splatting](https://arxiv.org/pdf/2401.03890.pdf) 3DGS🔥🔥🔥**on going** | arXiv 2024         |
@@ -187,6 +188,10 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 | Year | Title                                                        | Conference/Journal | Code                                                     | Project                                                      | Keywords                            |
 | ---- | ------------------------------------------------------------ | ------------------ | -------------------------------------------------------- | ------------------------------------------------------------ | ----------------------------------- |
+| 2024 | [HeadStudio: Text to Animatable Head Avatars with 3D Gaussian Splatting](https://arxiv.org/abs/2402.06149) | Arxiv 2024         |                                                          |                                                              | 🔥Gaussian Splatting, Avatar         |
+| 2024 | [GaussianHair: Hair Modeling and Rendering with Light-aware Gaussians](https://arxiv.org/abs/2402.10483) | Arxiv 2024         |                                                          |                                                              | 🔥Gaussian Splatting                 |
+| 2024 | [ImplicitDeepfake] [ImplicitDeepfake: Plausible Face-Swapping through Implicit Deepfake Generation using NeRF and Gaussian Splatting](https://arxiv.org/abs/2402.06390) | Arxiv 2024         |                                                          |                                                              | 🔥Gaussian Splatting, Deepfake       |
+| 2024 | [Consolidating Attention Features for Multi-view Image Editing](https://arxiv.org/abs/2402.14792) | Arxiv 2024         |                                                          |                                                              | 🔥Gaussian Splatting, Edit           |
 | 2024 | [Rig3DGS] [Rig3DGS: Creating Controllable Portraits from Casual Monocular Videos](http://arxiv.org/abs/2402.03723v1) | Arxiv 2024         |                                                          | [Project](http://shahrukhathar.github.io/2024/02/05/Rig3DGS.html) | Portraits                           |
 | 2024 | [4D Gaussian Splatting] [4D Gaussian Splatting: Towards Efficient Novel View Synthesis for Dynamic Scenes](http://arxiv.org/abs/2402.03307v2) | Arxiv 2024         |                                                          |                                                              | Dynamic Scenes                      |
 | 2024 | [ViCA-NeRF] [ViCA-NeRF: View-Consistency-Aware 3D Editing of Neural Radiance Fields](http://arxiv.org/abs/2402.00864v1) | NIPS 2023          | [Code](https://github.com/Dongjiahua/VICA-NeRF)          | [Project](https://github.com/Dongjiahua/VICA-NeRF)           | 3D Edit                             |
