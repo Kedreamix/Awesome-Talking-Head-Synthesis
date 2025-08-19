@@ -187,9 +187,7 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 | 2025 | [FlowDubber] [FlowDubber: Movie Dubbing with LLM-based Semantic-aware Learning and Flow Matching based Voice Enhancing](http://arxiv.org/abs/2505.01263v1) | Arxiv 2025 | | | LLM, Qwen |
 | 2025 | [KeySync] [KeySync: A Robust Approach for Leakage-free Lip Synchronization in High Resolution](http://arxiv.org/abs/2505.00497v1) | Arxiv 2025 | | | |
 | 2025 | [Ditto] [Ditto: Motion-Space Diffusion for Controllable Realtime Talking Head Synthesis](http://arxiv.org/abs/2411.19509v3) | Arxiv 2025 | | | Diffusion |
- |
 | 2025 | [FREAK] [FREAK: Frequency-modulated High-fidelity and Real-time Audio-driven Talking Portrait Synthesis](http://arxiv.org/abs/2503.04067v2) | ICMR 2025 | | | |
-
 | 2025 | [SE4Lip] [SE4Lip: Speech-Lip Encoder for Talking Head Synthesis to Solve Phoneme-Viseme Alignment Ambiguity](http://arxiv.org/abs/2504.05803v1) | Arxiv 2025 | | | Phoneme-Viseme |
 | 2025 | [MobilePortrait] [MobilePortrait: Real-Time One-Shot Neural Head Avatars on Mobile Devices](http://arxiv.org/abs/2407.05712v3) | CVPR 2025 | | | 100+fps |
 | 2025 | [ACTalk] [Audio-visual Controlled Video Diffusion with Masked Selective State Spaces Modeling for Natural Talking Head Generation](http://arxiv.org/abs/2504.02542v3) | Arxiv 2025 | | | |
@@ -214,7 +212,6 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 | 2025 | [LatentSync] [LatentSnc: Taming Audio-Conditioned Latent Diffusion Models for Lip Sync with SyncNet Supervision](http://arxiv.org/abs/2412.09262v2) | Arxiv 2025 | | | |
 | 2025 | [VersaAnimator] [Versatile Multimodal Controls for Whole-Body Talking Human Animation](http://arxiv.org/abs/2503.08714v1) | Arxiv 2025 | | | |
 | 2025 | [MagicInfinite] [MagicInfinite: Generating Infinite Talking Videos with Your Words and Voice](https://arxiv.org/abs/2503.05978v1) | Arxiv 2025 | | | |
- |
 | 2025 | [KeyFace] [KeyFace: Expressive Audio-Driven Facial Animation for Long Sequences via KeyFrame Interpolation](http://arxiv.org/abs/2503.01715v1) | CVPR 2025 | | | Diffusion, Long Sequences |
 | 2025 | [TexTalk] [Towards High-fidelity 3D Talking Avatar with Personalized Dynamic Texture](http://arxiv.org/abs/2503.00495v1) | CVPR 2025 | | | Texture |
 | 2025 | [AdaMesh] [AdaMesh: Personalized Facial Expressions and Head Poses for Adaptive Speech-Driven 3D Facial Animation](http://arxiv.org/abs/2310.07236v4) | IEEE Transactions on Multimedia                              | | [Project](https://adamesh.github.io/) | MLoRA, Personalized |
