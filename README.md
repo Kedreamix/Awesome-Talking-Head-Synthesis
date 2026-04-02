@@ -282,7 +282,7 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 | 2025 | [FixTalk: Taming Identity Leakage for High-Quality Talking Head Generation in Extreme Cases](http://arxiv.org/abs/2507.01390) | ArXiv 2025 |  |  | Identity Leakage, Extreme Cases |
 | 2025 | [Few-Shot Identity Adaptation for 3D Talking Heads via Global Gaussian Field](http://arxiv.org/abs/2506.22044) | ArXiv 2025 |  |  | Few-Shot, Global Gaussian Field, 3DGS |
 | 2025 | [JAM-Flow: Joint Audio-Motion Synthesis with Flow Matching](http://arxiv.org/abs/2506.23552) | ArXiv 2025 |  |  | Flow Matching, Audio-Motion |
-| 2025 | [ARTalk: Speech-Driven 3D Head Animation via Autoregressive Model](http://arxiv.org/abs/2502.20323) | ArXiv 2025 |  |  | Autoregressive, FLAME, 3D |
+| 2025 | [ARTalk: Speech-Driven 3D Head Animation via Autoregressive Model](http://arxiv.org/abs/2502.20323) | SIGGRAPH Asia |  [Code](https://github.com/xg-chu/ARTalk) |  [Project](https://xg-chu.site/project_artalk) | Autoregressive, FLAME, 3D |
 | 2025 | [Audio-Visual Driven Compression for Low-Bitrate Talking Head Videos](http://arxiv.org/abs/2506.13419) | ICMR 2025 |  |  | Compression, Low-Bitrate |
 | 2025 | [SyncTalk++: High-Fidelity and Efficient Synchronized Talking Heads Synthesis Using Gaussian Splatting](http://arxiv.org/abs/2506.14742) | ArXiv 2025 |  |  | 3DGS, Synchronization |
 | 2025 | [Controllable Expressive 3D Facial Animation via Diffusion in a Unified Multimodal Space](http://arxiv.org/abs/2506.10007) | ICME 2025 |  |  | 3D, Diffusion, Multimodal |
