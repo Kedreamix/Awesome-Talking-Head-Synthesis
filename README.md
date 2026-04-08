@@ -44,30 +44,28 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 ## Datasets
 
-![dataset描述](https://img-blog.csdnimg.cn/direct/841257d9dee74547bbd4f717794a9492.png#pic_center)
-
 | Year | Dataset | Conference/Journal | Download Link | Description |
 | ---- | ---- | ---- | ---- | ---- |
 | 2026 | [Leveraging Avatar Fingerprinting: A Multi-Generator Photorealistic Talking-Head Public Database and Benchmark](http://arxiv.org/abs/2603.26934) | ArXiv 2026 | N/A | Multi-generator benchmark for talking-head avatar fingerprinting and photorealistic avatar generation evaluation. |
 | 2026 | [A Near-Raw Talking-Head Video Dataset for Various Computer Vision Tasks](http://arxiv.org/abs/2603.26763) | ArXiv 2026 | N/A | Near-raw talking-head video dataset for computer vision tasks including detection, recognition, and generation. |
-| 2026 | [Face-to-Face: A Video Dataset for Multi-Person Interaction Modeling](http://arxiv.org/abs/2603.14794) | ArXiv 2026 | [Download](https://huggingface.co/datasets/ernestchu/f2f-jf) | 70-hour, 14k-clip dataset of two-person talk-show exchanges for multi-person interaction modeling. |
+| 2026 | [Face-to-Face: A Video Dataset for Multi-Person Interaction Modeling](http://arxiv.org/abs/2603.14794) | ArXiv 2026 | N/A | 70-hour, 14k-clip dataset of two-person talk-show exchanges for multi-person interaction modeling. |
 | 2026 | [SFQA](http://arxiv.org/abs/2601.20385) | ArXiv | N/A | A dataset for singing face generation quality assessment with 5,184 videos generated from 100 photographs and 36 music clips using 12 generation methods. |
-| 2025 | [TalkCuts](http://arxiv.org/abs/2510.07249) | ArXiv 2025 | [Download](https://talkcuts.github.io) | A large-scale dataset with 164k clips totaling over 500 hours of human speech videos featuring diverse camera shots and detailed annotations including textual descriptions, 2D keypoints, and 3D SMPL-X motions for multi-shot speech video generation. |
+| 2025 | [TalkCuts](http://arxiv.org/abs/2510.07249) | ArXiv 2025 | N/A | A large-scale dataset with 164k clips totaling over 500 hours of human speech videos featuring diverse camera shots and detailed annotations including textual descriptions, 2D keypoints, and 3D SMPL-X motions for multi-shot speech video generation. |
 | 2025 | [EmojiBench++](http://arxiv.org/abs/2509.16630) | IJCV 2025 | [Download](https://follow-your-emoji.github.io/) | A comprehensive benchmark for portrait animation comprising diverse portraits, driving videos, and landmark sequences. |
 | 2025 | [Multi-human Interactive](https://arxiv.org/abs/2508.03050) | ArXiv 2025 | [Download](https://github.com/showlab/Multi-human-Talking-Video-Dataset) | 12 hours of high-res footage with 2-4 speakers, fine-grained body pose and speech interaction annotations. |
 | 2025 | [THQA-10K](https://arxiv.org/abs/2507.23343) | ArXiv 2025 | [Download](https://github.com/zyj-2000/Talker) | Largest AGTH quality assessment dataset with 10,457 samples from 12 T2I models and 14 talkers. |
-| 2025 | [SpeakerVid-5M](http://arxiv.org/abs/2507.09862) | ArXiv | [Download](https://dorniwang.github.io/SpeakerVid-5M) | Large-scale dataset with 5.2M video clips (8,743 hours) for audio-visual dyadic interactive virtual human generation, covering monadic talking, listening, and dyadic conversations, with pre-training and SFT subsets. |
+| 2025 | [SpeakerVid-5M](http://arxiv.org/abs/2507.09862) | ArXiv | N/A | Large-scale dataset with 5.2M video clips (8,743 hours) for audio-visual dyadic interactive virtual human generation, covering monadic talking, listening, and dyadic conversations, with pre-training and SFT subsets. |
 | 2025 | [TalkingHeadBench](https://arxiv.org/abs/2505.24866) | WACV 2026 | [Download](https://huggingface.co/datasets/luchaoqi/TalkingHeadBench) | Comprehensive benchmark for talking-head deepfake detection with multi-model generators. |
 | 2025 | [Motion-X++](https://arxiv.org/abs/2501.05098) | ArXiv 2025 | N/A | 19.5M 3D whole-body pose annotations covering 120.5K motion sequences with 80.8K RGB videos. |
 | 2024 | [GLCF (MSTF)](https://arxiv.org/abs/2412.13656) | ArXiv 2024 | N/A | First large-scale multi-scenario talking face dataset with 22 audio/video forgery techniques. |
 | 2024 | [SAVEE](https://arxiv.org/abs/2411.02964) | ArXiv 2024 | [Download](http://kahlan.eps.surrey.ac.uk/savee/Download.html) | 480 British English utterances from 4 male actors expressing 7 emotions. |
 | 2024 | [Allo-AVA](https://arxiv.org/abs/2410.16503) | ArXiv 2024 | N/A | ~1,250 hours of conversational content for allocentric avatar gesture animation. |
-| 2024 | [MMHead](http://arxiv.org/abs/2410.07757) | ACMMM 2024 | [Download](https://github.com/wsj-sjtu/MMHead) | Large-scale multi-modal 3D facial animation dataset with 49 hours of 3D facial motion sequences, speech audios, and hierarchical text annotations for text-induced 3D talking head animation and text-to-3D facial motion generation. |
+| 2024 | [MMHead](http://arxiv.org/abs/2410.07757) | ACMMM 2024 | N/A | Large-scale multi-modal 3D facial animation dataset with 49 hours of 3D facial motion sequences, speech audios, and hierarchical text annotations for text-induced 3D talking head animation and text-to-3D facial motion generation. |
 | 2024 | [DH-FaceVid-1K](https://arxiv.org/abs/2410.07151) | ICCV 2025 | [Download](https://luna-ai-lab.github.io/DH-FaceVid-1K/) | 1,200 hours, 270K+ clips from 20K+ individuals with speech audio, keypoints, and text annotations. |
 | 2024 | [MultiTalk](https://arxiv.org/abs/2406.14272) | CVPR 2024 | [Download](https://github.com/postech-ami/MultiTalk/tree/main/MultiTalk_dataset) | 420+ hours across 20 languages, 293K clips (512x512, 25fps, avg 5.19s duration). |
 | 2024 | [THQA](https://arxiv.org/abs/2404.09003) | ArXiv 2024 | [Download](https://github.com/zyj-2000/THQA) | 800 talking head videos from 8 speech-driven methods with subjective quality assessments. |
 | 2023 | [GRID](https://arxiv.org/abs/2312.09727) | ArXiv 2023 | [Download](http://spandh.dcs.shef.ac.uk/avlombard/) | 34 volunteers each speaking 1000 phrases (34K utterances) with 6-word sentence structures. |
-| 2023 | [ViCo](http://arxiv.org/abs/2307.02090) | ArXiv 2023 | [Download](https://vico.solutions/) | ViCo and ViCo-X are datasets for conversational head generation, with ViCo for sentence-level independent talking and listening tasks, and ViCo-X for multi-turn conversational scenarios. |
+| 2023 | [ViCo](http://arxiv.org/abs/2307.02090) | ArXiv 2023 | N/A | ViCo and ViCo-X are datasets for conversational head generation, with ViCo for sentence-level independent talking and listening tasks, and ViCo-X for multi-turn conversational scenarios. |
 | 2023 | [TalkingHead-1KH](https://arxiv.org/abs/2306.11541) | ArXiv 2023 | [Download](https://github.com/tcwang0509/TalkingHead-1KH) | 500K video clips with ~80K greater than 512x512 resolution. Only permissive license videos included. |
 | 2023 | [CelebV](https://arxiv.org/abs/2303.14717) | CVPR 2023 | [Download](https://drive.google.com/file/d/1jQ6d76T5GQuvQH4dq8_Wq1T0cxvN0_xp/view) | Includes CelebV-Text with 70,000 in-the-wild face video clips for text-to-video generation. |
 | 2023 | [MMFace4D](https://arxiv.org/abs/2303.09797) | ArXiv 2023 | [Download](https://wuhaozhe.github.io/mmface4d/) | Large-scale multi-modal 4D dataset with 35,000+ sequences from 431 subjects (age 15-68). |
@@ -845,7 +843,7 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 | Year | Paper | Conference | Code | Project | Keywords |
 | ---- | ---- | ---- | ---- | ---- | ---- |
-| 2026 | [SentiAvatar: Towards Expressive and Interactive Digital Humans](https://arxiv.org/abs/2604.02908) | ArXiv 2026 | [Code](https://github.com/SentiAvatar/SentiAvatar) | [Project](https://sentiavatar.github.io) | Digital Human, Expressive, Interactive, Sentiment |
+| 2026 | [SentiAvatar: Towards Expressive and Interactive Digital Humans](https://arxiv.org/abs/2604.02908) | ArXiv 2026 |  | [Project](https://sentiavatar.github.io) | Digital Human, Expressive, Interactive, Sentiment |
 | 2026 | [HolisticSemGes: Semantic Grounding of Holistic Co-Speech Gesture Generation with Contrastive Flow-Matching](https://arxiv.org/abs/2603.26553) | ArXiv 2026 |  |  | Co-Speech Gesture, Semantic Grounding, Flow-Matching |
 | 2026 | [Empathetic Motion Generation for Humanoid Educational Robots via Reasoning-Guided Vision-Language-Motion Diffusion](https://arxiv.org/abs/2603.18771) | ArXiv 2026 |  |  | Empathetic Motion, Humanoid Robot, Gesture Generation |
 | 2026 | [MIBURI: Towards Expressive Interactive Gesture Synthesis](http://arxiv.org/abs/2603.03282) | CVPR 2026 |  | [Project](https://vcai.mpi-inf.mpg.de/projects/MIBURI/) | Gesture Synthesis, Real-Time, LLM-Conditioned, Whole-Body |
