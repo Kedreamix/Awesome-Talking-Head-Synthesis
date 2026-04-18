@@ -149,6 +149,8 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 | Year | Title | Conference/Journal | Code | Project | Keywords |
 | ---- | ---- | ---- | ---- | ---- | ---- |
+| 2026 | [TurboTalk: Progressive Distillation for One-Step Audio-Driven Talking Avatar Generation](https://arxiv.org/abs/2604.14580) | ArXiv 2026 |  |  | distillation, audio-driven, avatar, head avatar |
+| 2026 | [SEDTalker: Emotion-Aware 3D Facial Animation Using Frame-Level Speech Emotion Diarization](https://arxiv.org/abs/2604.13335) | ArXiv 2026 | [Code](https://github.com/FarzanehJafari1987/SEDTalker) | [Project](https://farzanehjafari1987.github.io/SEDTalker.github.io) | audio-driven, 3D, emotion, facial animation |
 | 2026 | [PrivFedTalk: Privacy-Aware Federated Diffusion with Identity-Stable Adapters for Personalized Talking-Head Generation](https://arxiv.org/abs/2604.08037) | ArXiv 2026 | [Code](https://github.com/mazumdarsoumya/PrivFedTalk) |  | federated learning, diffusion, privacy-aware, personalized talking head |
 | 2026 | [Cross-Modal Emotion Transfer for Emotion Editing in Talking Face Video](https://arxiv.org/abs/2604.07786) | CVPR 2026 | [Code](https://github.com/ChanHyeok-Choi/C-MET) | [Project](https://chanhyeok-choi.github.io/C-MET) | emotion transfer, emotion editing, talking face, cross-modal |
 | 2026 | [MMTalker: Multiresolution 3D Talking Head Synthesis with Multimodal Feature Fusion](https://arxiv.org/abs/2604.02941) | ArXiv 2026 |  |  | 3D, Audio-Driven, Multimodal Fusion, Mesh Parameterization |
@@ -579,6 +581,9 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 | Year | Title | Conference/Journal | Code | Project | Keywords |
 | ---- | ---- | ---- | ---- | ---- | ---- |
+| 2026 | [One-shot Compositional 3D Head Avatars with Deformable Hair](https://arxiv.org/abs/2604.14782) | ArXiv 2026 | [Code](https://github.com/YuanSun-XJTU/CompHairHead) | [Project](https://yuansun-xjtu.github.io/CompHairHead.io) | 3D, avatar, head avatar, hair, one-shot, compositional |
+| 2026 | [Giving Faces Their Feelings Back: Explicit Emotion Control for Feedforward Single-Image 3D Head Avatars](https://arxiv.org/abs/2604.14541) | ArXiv 2026 |  |  | 3D, avatar, emotion, head avatar |
+| 2026 | [3DRealHead: Few-Shot Detailed Head Avatar](https://arxiv.org/abs/2604.13171) | ArXiv 2026 |  | [Project](https://jalees018.github.io/3DRealHead) | 3D, avatar, head avatar, few-shot |
 | 2026 | [PerformRecast: Expression and Head Pose Disentanglement for Portrait Video Editing](https://arxiv.org/abs/2603.19731) | CVPR 2026 |  | [Project](https://youku-aigc.github.io/PerformRecast) | Portrait Editing, Expression Control, Head Pose Disentanglement |
 | 2026 | [TDMM-LM: Bridging Facial Understanding and Animation via Language Models](https://arxiv.org/abs/2603.16936) | ArXiv 2026 |  | [Project](https://songluchuan.github.io/TDMM-LM) | Facial Animation, Language Models, Text-guided |
 | 2026 | [NBAvatar: Neural Billboards Avatars with Realistic Hand-Face Interaction](https://arxiv.org/abs/2603.12063) | ArXiv 2026 |  |  | Hand-Face Interaction, Neural Billboards, Avatar |
@@ -877,6 +882,7 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 | Year | Title | Conference/Journal | Code | Project | Keywords |
 | ---- | ---- | ---- | ---- | ---- | ---- |
+| 2026 | [Prompt-to-Gesture: Measuring the Capabilities of Image-to-Video Deictic Gesture Generation](https://arxiv.org/abs/2604.14953) | FG 2026 |  | [Project](https://prompt-to-gesture.github.io) | gesture generation |
 | 2026 | [Efficient Emotion-Aware Iconic Gesture Prediction for Robot Co-Speech](https://arxiv.org/abs/2604.11417) | ArXiv 2026 |  |  | co-speech gesture, robot, iconic gesture, emotion-aware |
 | 2026 | [LiveGesture Streamable Co-Speech Gesture Generation Model](https://arxiv.org/abs/2604.10927) | ArXiv 2026 |  | [Project](https://m-usamasaleem.github.io/publication/LiveGesture/LiveGesture.html) | co-speech gesture, streaming, full-body, real-time |
 | 2026 | [SentiAvatar: Towards Expressive and Interactive Digital Humans](https://arxiv.org/abs/2604.02908) | ArXiv 2026 | [Code](https://github.com/SentiAvatar/SentiAvatar) | [Project](https://sentiavatar.github.io) | Digital Human, Expressive, Interactive, Sentiment |
