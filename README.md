@@ -150,6 +150,10 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 | Year | Title | Conference/Journal | Code | Project | Keywords |
 | ---- | ---- | ---- | ---- | ---- | ---- |
+| 2026 | [HighSync: High-Quality Lip Synchronization via Latent Diffusion Models](https://arxiv.org/abs/2605.16918) | ArXiv 2026 | [Code](https://github.com/saeed5959/high_sync) |  | lip synchronization, diffusion model, talking face, high-resolution, audio-driven |
+| 2026 | [MoCoTalk: Multi-Conditional Diffusion with Adaptive Router for Controllable Talking Head Generation](https://arxiv.org/abs/2605.08050) | ArXiv 2026 |  |  | talking head, multi-conditional, diffusion, 3DMM, controllable |
+| 2026 | [AudioFace: Language-Assisted Speech-Driven Facial Animation with Multimodal Language Models](https://arxiv.org/abs/2605.07478) | ArXiv 2026 |  |  | speech-driven, facial animation, blendshape, multimodal LLM, language-assisted |
+| 2026 | [TAVR: Generate Your Talking Avatar from Video Reference](https://arxiv.org/abs/2604.27918) | ArXiv 2026 |  | [Project](https://gseancdat.github.io/projects/TAVR) | talking avatar, video reference, cross-scene, reinforcement learning, identity preservation |
 | 2026 | [Talking Slide Avatars: Open-Source Multimodal Communication Approach for Teaching](https://arxiv.org/abs/2604.23703) | ArXiv 2026 |  |  | talking slide avatars, text-to-speech, audio-driven synthesis, educational |
 | 2026 | [Personalizing Causal Audio-Driven Facial Motion via Dynamic Multi-modal Retrieval](https://arxiv.org/abs/2604.23692) | ArXiv 2026 |  |  | causal audio-driven, facial motion, multi-modal retrieval, personalization |
 | 2026 | [Hallo-Live: Real-Time Streaming Joint Audio-Video Avatar Generation with Asynchronous Dual-Stream and Human-Centric Preference Distillation](https://arxiv.org/abs/2604.23632) | ArXiv 2026 | [Code](https://github.com/fudan-generative-vision/Hallo-Live) |  | real-time avatar, audio-video generation, diffusion, streaming |
@@ -718,6 +722,12 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 | Year | Title | Conference/Journal | Code | Project | Keywords |
 | ---- | ---- | ---- | ---- | ---- | ---- |
+| 2026 | [PiG-Avatar: Hierarchical Neural-Field-Guided Gaussian Avatars](https://arxiv.org/abs/2605.20185) | ArXiv 2026 |  |  | gaussian splatting, neural field, full-body avatar, clothing, hierarchical |
+| 2026 | [FFAvatar: Few-Shot, Feed-Forward, and Generalizable Avatar Reconstruction](https://arxiv.org/abs/2605.15320) | ArXiv 2026 |  | [Project](https://ffavatar.github.io) | gaussian splatting, head avatar, few-shot, FLAME, feed-forward |
+| 2026 | [SDTalk: Structured Facial Priors and Dual-Branch Motion Fields for Generalizable Gaussian Talking Head Synthesis](https://arxiv.org/abs/2605.09956) | ArXiv 2026 |  |  | gaussian splatting, talking head, one-shot, facial priors, lip sync |
+| 2026 | [HeadsUp: Large-Scale High-Quality 3D Gaussian Head Reconstruction from Multi-View Captures](https://arxiv.org/abs/2605.04035) | ArXiv 2026 |  | [Project](https://apple.github.io/ml-headsup) | gaussian splatting, head reconstruction, multi-view, large-scale, animatable |
+| 2026 | [HumanSplatHMR: Closing the Loop Between Human Mesh Recovery and Gaussian Splatting Avatar](https://arxiv.org/abs/2605.02784) | ArXiv 2026 |  |  | gaussian splatting, human mesh recovery, full-body avatar, novel view synthesis, pose refinement |
+| 2026 | [High-Fidelity Mobile Avatars with Pruned Local Blendshapes](https://arxiv.org/abs/2605.01854) | ArXiv 2026 |  | [Project](https://gapszju.github.io/webavatar) | gaussian splatting, mobile rendering, full-body avatar, blendshapes, real-time |
 | 2026 | [SketchFaceGS: Real-Time Sketch-Driven Face Editing and Generation with Gaussian Splatting](https://arxiv.org/abs/2604.19202) | CVPR 2026 (Highlight) | [Code](https://github.com/gogoneural/SketchFaceGS_jittor) |  | 3DGS, sketch-driven, face editing, real-time, CVPR 2026 |
 | 2026 | [Any3DAvatar: Fast and High-Quality Full-Head 3D Avatar Reconstruction from Single Portrait Image](https://arxiv.org/abs/2604.13856) | ArXiv 2026 |  |  | single-image, 3DGS head, feed-forward, full-head |
 | 2026 | [F3G-Avatar : Face Focused Full-body Gaussian Avatar](https://arxiv.org/abs/2604.09835) | CVPRW 2026 | [Code](https://github.com/wjmenu/F3G-avatar) |  | full-body avatar, face-focused, gaussian splatting, multi-view |
@@ -895,6 +905,11 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 | Year | Title | Conference/Journal | Code | Project | Keywords |
 | ---- | ---- | ---- | ---- | ---- | ---- |
+| 2026 | [UMo: Unified Sparse Motion Modeling for Real-Time Co-Speech Avatars](https://arxiv.org/abs/2605.14731) | ArXiv 2026 |  |  | co-speech avatar, real-time, mixture-of-experts, gesture generation, unified motion |
+| 2026 | [PersonaGest: Personalized Co-Speech Gesture Generation with Semantic-Guided Hierarchical Motion Representation](https://arxiv.org/abs/2605.07252) | ArXiv 2026 |  | [Project](https://danny-nus.github.io/PersonaGest) | co-speech gesture, personalization, VQ-VAE, semantic-aware, motion generation |
+| 2026 | [PersonaGesture: Single-Reference Co-Speech Gesture Personalization for Unseen Speakers](https://arxiv.org/abs/2605.06064) | ArXiv 2026 |  | [Project](https://xiangyue-zhang.github.io/PersonaGesture) | co-speech gesture, personalization, diffusion, style transfer, single-reference |
+| 2026 | [Reality Check: How Avatar and Face Representation Affect the Perceptual Evaluation of Synthesized Gestures](https://arxiv.org/abs/2605.06063) | ArXiv 2026 |  |  | co-speech gesture, perceptual evaluation, avatar representation, user study, benchmarking |
+| 2026 | [D-Rex : Diffusion Rendering for Relightable Expressive Avatars](https://arxiv.org/abs/2604.27871) | ArXiv 2026 |  |  | relighting, full-body avatar, diffusion, expressive animation, light stage |
 | 2026 | [Prompt-to-Gesture: Measuring the Capabilities of Image-to-Video Deictic Gesture Generation](https://arxiv.org/abs/2604.14953) | FG 2026 |  | [Project](https://prompt-to-gesture.github.io) | gesture generation |
 | 2026 | [LiveGesture Streamable Co-Speech Gesture Generation Model](https://arxiv.org/abs/2604.10927) | ArXiv 2026 |  | [Project](https://m-usamasaleem.github.io/publication/LiveGesture/LiveGesture.html) | co-speech gesture, streaming, full-body, real-time |
 | 2026 | [GenLCA: 3D Diffusion for Full-Body Avatars from In-the-Wild Videos](https://arxiv.org/abs/2604.07273) | ArXiv 2026 |  |  | full-body avatar, 3D diffusion, photorealistic |
