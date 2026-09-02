@@ -49,6 +49,9 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 | Year | Dataset | Conference/Journal | Download Link | Description |
 | ---- | ---- | ---- | ---- | ---- |
+| 2026 | [The GENEA Challenge 2026: A Large-Scale Disentangled Evaluation of Speech-Driven Gesture Generation on the Seamless Interaction Dataset](https://arxiv.org/abs/2608.10839) | ArXiv 2026 | [Download](https://genea-workshop.github.io/2026/challenge) | Large-scale disentangled human-evaluation challenge for speech-driven co-speech gesture generation (GENEA 2026). |
+| 2026 | [REACT 2026: The Fourth Multiple Appropriate Facial Reaction Generation Challenge: Personalised MAFRG and Appropriate EEG Reaction Prediction](https://arxiv.org/abs/2606.07935) | ArXiv 2026 | [Download](https://github.com/reactmultimodalchallenge/baseline_react2026) | Fourth Multiple Appropriate Facial Reaction Generation Challenge for personalized listener reactions in dyadic interaction. |
+| 2026 | [MTAVG-Bench 2.0: Diagnosing Failure Modes of Cinematic Expressiveness in Multi-Talker Audio-Video Generation](https://arxiv.org/abs/2605.28035) | ArXiv 2026 | [Download](https://huggingface.co/datasets/Lanht/MTAVG-Bench2) | Benchmark diagnosing cinematic-expressiveness failure modes in multi-talker audio-visual generation. |
 | 2026 | [AVAPrintDB: Leveraging Avatar Fingerprinting: A Multi-Generator Photorealistic Talking-Head Public Database and Benchmark](http://arxiv.org/abs/2603.26934) | ArXiv 2026 | N/A | Multi-generator benchmark for talking-head avatar fingerprinting and photorealistic avatar generation evaluation. |
 | 2026 | [A Near-Raw Talking-Head Video Dataset for Various Computer Vision Tasks](http://arxiv.org/abs/2603.26763) | ArXiv 2026 | N/A | Near-raw talking-head video dataset for computer vision tasks including detection, recognition, and generation. |
 | 2026 | [Face-to-Face: A Video Dataset for Multi-Person Interaction Modeling](http://arxiv.org/abs/2603.14794) | ArXiv 2026 | [Download](https://huggingface.co/datasets/ernestchu/f2f-jf) | 70-hour, 14k-clip dataset of two-person talk-show exchanges for multi-person interaction modeling. |
@@ -96,6 +99,7 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 | Year | Title | Conference/Journal |
 | ---- | ---- | ---- |
+| 2026 | [How to Build Digital Humans? From Priors to Photorealistic Avatars](https://arxiv.org/abs/2607.04341) | Eurographics 2026 |
 | 2025 | [A Survey of Body and Face Motion: Datasets, Performance Evaluation Metrics and Generative Techniques](https://arxiv.org/abs/2512.09005) | ArXiv 2025 |
 | 2025 | [Human Motion Video Generation: A Survey](https://arxiv.org/abs/2509.03883) | TPAMI |
 | 2025 | [A Survey on 3D Gaussian Splatting Applications: Segmentation, Editing, and Generation](https://arxiv.org/abs/2508.09977) | ArXiv 2025 |
@@ -150,6 +154,24 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 | Year | Title | Conference/Journal | Code | Project | Keywords |
 | ---- | ---- | ---- | ---- | ---- | ---- |
+| 2026 | [EfficientSync: Real-Time Lip Synchronization via Deformation-Based Reference Texture Mixing](https://arxiv.org/abs/2608.18832) | ArXiv 2026 |  | [Project](https://alunaticat.github.io/EfficientSync/index.html) | lip synchronization, audio-driven, texture mixing, real-time |
+| 2026 | [DynaForcing: Overcoming Dynamic Collapse in Self-Forcing Distillation for Streaming Avatar Generation](https://arxiv.org/abs/2608.17707) | ACM MM 2026 |  |  | audio-driven, streaming avatar, lip-sync, self-forcing |
+| 2026 | [Xemo-Talker: Unlock Emotions Explicitly for Audio-Driven Talking Portrait Synthesis](https://arxiv.org/abs/2608.14700) | ArXiv 2026 | [Code](https://github.com/chaolongy/Xemo-Talker) |  | audio-driven, emotion control, talking portrait, lip-sync |
+| 2026 | [Omni-LiveAvatar: Minute-Level Real-Time Streaming Joint Audio-Video Avatar Generation](https://arxiv.org/abs/2608.13602) | ArXiv 2026 | [Code](https://github.com/Aoko955/Omni-LiveAvatar) | [Project](https://aoko955.github.io/Omni-LiveAvatar/) | joint audio-video, streaming avatar, real-time, prompt planning |
+| 2026 | [Avatar-Forever: Decoupled Parallel Training for High-Quality Real-Time Infinite Avatars](https://arxiv.org/abs/2608.12107) | ArXiv 2026 | [Code](https://github.com/leeruibin/avatarforever) | [Project](https://leeruibin.github.io/avatarforever-project-page/) | audio-driven, streaming avatar, real-time, long-horizon, distillation |
+| 2026 | [Proxy Avatar Meets Low-Rank Caching: Real-Time One-Shot Emotion-Controllable Portrait Animation](https://arxiv.org/abs/2608.01978) | ArXiv 2026 |  |  | audio-driven, portrait animation, emotion control, one-shot, real-time |
+| 2026 | [GemTalk: Geometry-guided Emotion Modulation for Controllable and Photorealistic Emotional Talking Face Generation](https://arxiv.org/abs/2608.00663) | ACM MM 2026 |  |  | audio-driven, emotional talking face, blendshape prior, diffusion |
+| 2026 | [LeapTalk: Breaking the Latency-Quality Trade-off in Talking Head Generation](https://arxiv.org/abs/2608.00079) | ArXiv 2026 | [Code](https://github.com/zhangrongxiang/LeapTalk) | [Project](https://zhangrongxiang.github.io/leaptalk-page) | audio-driven, talking head, real-time, diffusion distillation |
+| 2026 | [TaoMate: Anchor-Guided Memory Bridging Evolving and Reference States for Real-Time Audio-Video Digital Human Generation](https://arxiv.org/abs/2607.24359) | ArXiv 2026 | [Code](https://github.com/TaoLiveAIGC/TaoMate) | [Project](https://taoliveaigc.github.io/TaoMate) | digital human, audio-video, real-time, talking head, TaoMate |
+| 2026 | [AptAvatar: Fast and Vivid Long-Form Audio-Driven Video Generation for Production-Ready Avatars](https://arxiv.org/abs/2607.24013) | ArXiv 2026 | [Code](https://github.com/TaoLiveAIGC/AptAvatar) | [Project](https://taoliveaigc.github.io/AptAvatar/) | audio-driven, avatar generation, distillation, long-form, real-time |
+| 2026 | [SyncCache: Exploiting Asymmetric Dynamics for Fast Audio-Driven Portrait Animation](https://arxiv.org/abs/2606.30849) | ECCV 2026 |  |  | audio-driven, portrait animation, caching, lip-sync, DiT |
+| 2026 | [ReFree: Towards Realistic Co-Speech Video Generation via Reward-Free RL and Multilevel Speech Guidance](https://arxiv.org/abs/2606.13304) | ArXiv 2026 |  |  | speech-driven, portrait animation, lip-sync, co-speech |
+| 2026 | [Lip Forcing: Few-Step Autoregressive Diffusion for Real-time Lip Synchronization](https://arxiv.org/abs/2606.11180) | ArXiv 2026 | [Code](https://github.com/cvlab-kaist/LipForcing) | [Project](https://cvlab-kaist.github.io/LipForcing) | lip synchronization, audio-driven, autoregressive diffusion, real-time |
+| 2026 | [Mamba-Enhanced Implicit Motion Learning for Audio-Driven Portrait Animation](https://arxiv.org/abs/2606.03402) | ICME 2026 |  |  | audio-driven, portrait animation, implicit motion, diffusion |
+| 2026 | [Real-Time Generation of Streamable Talking Portrait Video with Reference-Guided Deep Compression VAEs](https://arxiv.org/abs/2606.01620) | CVPR 2026 |  |  | audio-driven, talking portrait, streaming, causal VAE, real-time |
+| 2026 | [FreeTalkDiff: IP-Adapter Is All You Need: Towards Fine-Tuning-Free Diffusion-Based Talking Face Generation](https://arxiv.org/abs/2605.30230) | ArXiv 2026 | [Code](https://github.com/tlemangen/FreeTalkDiff) |  | talking face, diffusion, IP-Adapter, lip-sync |
+| 2026 | [CogPortrait: Fine-Grained Eye-Region Control in Portrait Animation via Hierarchical Agent Planning](https://arxiv.org/abs/2605.28056) | ArXiv 2026 |  |  | audio-driven, portrait animation, eye control, lip-sync, DiT |
+| 2026 | [Test-Time Self-Adaptive Conditioning for Stable Audio-Driven Talking-Head Generation](https://arxiv.org/abs/2605.25488) | ArXiv 2026 |  |  | audio-driven, talking head, test-time adaptation, identity stability |
 | 2026 | [HighSync: High-Quality Lip Synchronization via Latent Diffusion Models](https://arxiv.org/abs/2605.16918) | ArXiv 2026 | [Code](https://github.com/saeed5959/high_sync) |  | lip synchronization, diffusion model, talking face, high-resolution, audio-driven |
 | 2026 | [MoCoTalk: Multi-Conditional Diffusion with Adaptive Router for Controllable Talking Head Generation](https://arxiv.org/abs/2605.08050) | ArXiv 2026 |  |  | talking head, multi-conditional, diffusion, 3DMM, controllable |
 | 2026 | [AudioFace: Language-Assisted Speech-Driven Facial Animation with Multimodal Language Models](https://arxiv.org/abs/2605.07478) | ArXiv 2026 |  |  | speech-driven, facial animation, blendshape, multimodal LLM, language-assisted |
@@ -519,6 +541,10 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 | Year | Title | Conference/Journal | Code | Project | Keywords |
 | ---- | ---- | ---- | ---- | ---- | ---- |
+| 2026 | [TongueReenact: Geometry-Anchored Tongue Synthesis for Face Reenactment](https://arxiv.org/abs/2607.28039) | ArXiv 2026 |  |  | face reenactment, tongue, video-driven, diffusion, cross-identity |
+| 2026 | [ViDS: Video Diffusion Shader using 3D Face Tracking](https://arxiv.org/abs/2607.24124) | ArXiv 2026 |  | [Project](https://fusheng-ji.github.io/ViDS) | portrait animation, video-driven, 3DMM, video diffusion, face tracking |
+| 2026 | [MagPlus: Bridging Micro-to-Regular Facial Expressions through Learnable Magnification](https://arxiv.org/abs/2606.13312) | ArXiv 2026 |  |  | micro-expression, facial animation, motion magnification, portrait animation |
+| 2026 | [Loki: Representation over Architecture for Diffusion-Based Portrait Animation](https://arxiv.org/abs/2605.24176) | ArXiv 2026 |  |  | face reenactment, video-driven, portrait animation, expression, head pose |
 | 2026 | [PortraitDirector: A Hierarchical Disentanglement Framework for Controllable and Real-time Facial Reenactment](https://arxiv.org/abs/2604.19129) | CVPR 2026 |  |  | face reenactment, disentanglement, real-time, CVPR 2026 |
 | 2026 | [MMFace-DiT: A Dual-Stream Diffusion Transformer for High-Fidelity Multimodal Face Generation](https://arxiv.org/abs/2603.29029) | CVPR 2026 | [Code](https://github.com/Bharath-K3/MMFace-DiT) | [Project](https://vcbsl.github.io/MMFace-DiT/) | Diffusion Transformer, Multimodal, Face Generation |
 | 2026 | [FG-Portrait: 3D Flow Guided Editable Portrait Animation](https://arxiv.org/abs/2603.23381) | CVPR 2026 |  |  | portrait animation, 3D flow, CVPR |
@@ -560,6 +586,8 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 | Year | Title | Conference/Journal | Code/Proj |
 | ---- | ---- | ---- | ---- |
+| 2026 | [RAGMesh with FaME-G2E: Long-Form Text-Driven 3D Face Generation and Editing](https://arxiv.org/abs/2608.09186) | ArXiv 2026 |  |
+| 2026 | [IaD: Customizing Video Portraits via Identity-Action Decoupling](https://arxiv.org/abs/2606.22347) | ArXiv 2026 |  |
 | 2026 | [High-Fidelity 3D Facial Avatar Synthesis with Controllable Fine-Grained Expressions](https://arxiv.org/abs/2603.14781) | ArXiv 2026 |  |
 | 2026 | [Text-Driven Emotionally Continuous Talking Face Generation](https://arxiv.org/abs/2603.06071) | ArXiv 2026 |  |
 | 2026 | [Dual Diffusion Models for Multi-modal Guided 3D Avatar Generation](https://arxiv.org/abs/2603.04307) | ArXiv 2026 |  |
@@ -592,6 +620,15 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 | Year | Title | Conference/Journal | Code | Project | Keywords |
 | ---- | ---- | ---- | ---- | ---- | ---- |
+| 2026 | [AnyTalk: Speech Animation for Arbitrary Characters Leveraging a Video Generation Model](https://arxiv.org/abs/2608.16143) | IEEE TVCG |  | [Project](https://serin-yoon.github.io/projects/anytalk) | blendshape, 3D speech animation, video diffusion, lip-sync |
+| 2026 | [CETalk: Continuous Valence-Arousal Control for Audio-Driven 3D Talking Head Generation](https://arxiv.org/abs/2608.15110) | ArXiv 2026 |  |  | FLAME, audio-driven, valence-arousal, 3D talking head |
+| 2026 | [SubtleTalk: Generating Controllable Weakly-correlated Facial Dynamics for 3D Talking Heads via Residual Flow Matching](https://arxiv.org/abs/2608.06408) | ArXiv 2026 | [Code](https://github.com/molly-ding/SubtleTalk) | [Project](https://molly-ding.github.io/SubtleTalk/) | 3D facial animation, audio-driven, flow matching, facial dynamics |
+| 2026 | [ETHead: Generating Expressive 3D Facial Animation and Head Movement from Speech](https://arxiv.org/abs/2608.01605) | ArXiv 2026 | [Code](https://github.com/Verdure-oss/ETHead) | [Project](https://verdure-oss.github.io/ETHead.github.io) | 3D facial animation, speech-driven, expressive motion, head movement |
+| 2026 | [KM-Speaker: Keypoint-Based Style Control for High-Quality Speech-Driven 3D Facial Animation and Dialogue Localization](https://arxiv.org/abs/2606.28568) | ArXiv 2026 |  |  | 3D facial animation, speech-driven, style control, visual dubbing |
+| 2026 | [From Tokens to Faces: Investigating Discrete Speech Representations for 3D Facial Animation](https://arxiv.org/abs/2606.13630) | Interspeech 2026 | [Code](https://github.com/ProdCor/Token-to-Face) | [Project](https://prodcor.github.io/Token-to-Face/) | 3D facial animation, speech representation, audio-driven, AVTTS, mesh |
+| 2026 | [AutoFaceARKit: Deploying Speech-Driven 3D Facial Animation in Unreal Engine for Production-Ready Digital Humans](https://arxiv.org/abs/2606.10753) | SIGGRAPH 2026 Posters |  | [Project](https://uuembodiedsocialai.github.io/AutoFaceARKit/) | speech-driven, 3D facial animation, ARKit blendshape, Unreal Engine, digital human |
+| 2026 | [TokTalk: Expressive Real-time Facial Animation from Audio-LLM Tokens](https://arxiv.org/abs/2605.31294) | ArXiv 2026 |  |  | FLAME, 3D facial animation, Audio-LLM, real-time, flow matching |
+| 2026 | [CapTalk: Text-Guided Stylization and Speech-Driven 3D Head Animation](https://arxiv.org/abs/2605.29316) | ArXiv 2026 |  |  | 3D head animation, speech-driven, text-guided style, emotion |
 | 2026 | [MeshLAM: Feed-Forward One-Shot Animatable Textured Mesh Avatar Reconstruction](https://arxiv.org/abs/2604.22865) | CVPR 2026 |  | [Project](https://meshlam.github.io) | 3D mesh avatar, one-shot reconstruction, animatable head, feed-forward |
 | 2026 | [CompHairHead: One-shot Compositional 3D Head Avatars with Deformable Hair](https://arxiv.org/abs/2604.14782) | ArXiv 2026 | [Code](https://github.com/YuanSun-XJTU/CompHairHead) | [Project](https://yuansun-xjtu.github.io/CompHairHead.io) | 3D, avatar, head avatar, hair, one-shot, compositional |
 | 2026 | [Giving Faces Their Feelings Back: Explicit Emotion Control for Feedforward Single-Image 3D Head Avatars](https://arxiv.org/abs/2604.14541) | ArXiv 2026 |  |  | 3D, avatar, emotion, head avatar |
@@ -722,6 +759,21 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 | Year | Title | Conference/Journal | Code | Project | Keywords |
 | ---- | ---- | ---- | ---- | ---- | ---- |
+| 2026 | [PD-GS: Phoneme-Driven 3DGS for Audio-Driven Talking Heads](https://arxiv.org/abs/2608.05218) | ACM MM 2026 |  |  | 3DGS, phoneme-driven, audio-driven, lip articulation |
+| 2026 | [S-Avatar: Diffusion-Guided Gaussian Head Avatars from a Single Image](https://arxiv.org/abs/2607.28164) | ArXiv 2026 |  |  | 3DGS, single-image, FLAME, animatable head, diffusion |
+| 2026 | [SpiD: Split and Drive: Dual-Axis Disentanglement for Real-Time Gaussian Head Avatars](https://arxiv.org/abs/2607.28032) | ArXiv 2026 |  |  | 3DGS, single-image, animatable head, real-time |
+| 2026 | [DynHair: Head Avatars with Dynamic Explicit Hair](https://arxiv.org/abs/2607.23861) | ArXiv 2026 | [Code](https://github.com/Vanessik/DynHair) | [Project](https://dynhair.is.tue.mpg.de/) | 3DGS, head avatar, dynamic hair, animatable |
+| 2026 | [URHead: A Unified UV-Space Representation for Joint Mesh-3DGS Optimization in Head Avatars](https://arxiv.org/abs/2607.22673) | ECCV 2026 |  | [Project](https://lseonghak.github.io/website/project/urhead) | 3DGS, mesh, animatable head, UV-space |
+| 2026 | [FA-LAM: Focus-Aware Large Avatar Model for One-Shot 4D Animatable Gaussian Head](https://arxiv.org/abs/2607.20922) | ArXiv 2026 |  |  | 3DGS, one-shot, 4D head, animatable avatar |
+| 2026 | [GaussianEmoTalker: Real-Time Emotional Talking Head Synthesis with Audio-Driven and Blendshape-Based 3D Gaussian Splatting](https://arxiv.org/abs/2607.00959) | ArXiv 2026 |  | [Project](https://njust-yang.github.io/GaussianEmoTalker.github.io) | 3DGS, audio-driven, emotional talking head, blendshapes |
+| 2026 | [FFAvatar: Feed-Forward 4D Head Avatar Reconstruction from Sparse Portrait Images](https://arxiv.org/abs/2606.30347) | ECCV 2026 | [Code](https://github.com/jj-yao/FFAvatar-Code) | [Project](https://jj-yao.github.io/ffavatar) | 3DGS, 4D head, FLAME, feed-forward, animatable |
+| 2026 | [FiCA: Feed-forward instant Gaussian Codec Avatars from a Single Portrait Image](https://arxiv.org/abs/2606.24232) | ArXiv 2026 |  | [Project](https://kim-youwang.github.io/FiCA) | 3DGS, codec avatar, single-image, drivable, feed-forward |
+| 2026 | [Edit3DGS: Unified Framework for Dynamic Head Editing via 2D Instruction-Guided Diffusion and 3D Gaussian Splatting](https://arxiv.org/abs/2606.17432) | SOICT 2025 |  |  | text editing, 3DGS, dynamic head, instruction-guided |
+| 2026 | [EmoZone-Talker: Regional Semantic Control of Audio-Driven 3DGS Talking Heads via Facial Action Units](https://arxiv.org/abs/2606.15848) | ArXiv 2026 |  |  | 3DGS, audio-driven, action units, expression control |
+| 2026 | [SpatialAvatar-0: High-Quality 4D Head Avatar with Multi-Stage Reconstruction](https://arxiv.org/abs/2606.15659) | ArXiv 2026 |  | [Project](https://spatialwalk.github.io/SpatialAvatar-0) | 3DGS, 4D head, FLAME, feed-forward |
+| 2026 | [LentiAvatar: Pseudo-Multiview Reconstruction and Subpixel Prism Rendering for Real-Time Stereoscopic Communication](https://arxiv.org/abs/2606.10550) | ArXiv 2026 |  |  | 3DGS, head avatar, telepresence, controllable |
+| 2026 | [SAGE: Self-Learning Expression Deformations for Data-Efficient Gaussian Avatars](https://arxiv.org/abs/2606.05912) | ArXiv 2026 |  |  | 3DGS, Gaussian avatar, expression, animatable, few-shot |
+| 2026 | [SplitAvatar: One-shot Head Avatar with Autoregressive Gaussian Splitting](https://arxiv.org/abs/2605.25751) | ArXiv 2026 |  |  | 3DGS, one-shot, animatable head, Gaussian splitting, 3DMM |
 | 2026 | [PiG-Avatar: Hierarchical Neural-Field-Guided Gaussian Avatars](https://arxiv.org/abs/2605.20185) | ArXiv 2026 |  |  | gaussian splatting, neural field, full-body avatar, clothing, hierarchical |
 | 2026 | [FFAvatar: Few-Shot, Feed-Forward, and Generalizable Avatar Reconstruction](https://arxiv.org/abs/2605.15320) | ArXiv 2026 |  | [Project](https://ffavatar.github.io) | gaussian splatting, head avatar, few-shot, FLAME, feed-forward |
 | 2026 | [SDTalk: Structured Facial Priors and Dual-Branch Motion Fields for Generalizable Gaussian Talking Head Synthesis](https://arxiv.org/abs/2605.09956) | ArXiv 2026 |  |  | gaussian splatting, talking head, one-shot, facial priors, lip sync |
@@ -868,6 +920,18 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 | Year | Title | Conference/Journal | Code | Project | Keywords |
 | ---- | ---- | ---- | ---- | ---- | ---- |
+| 2026 | [EmpaAva: An Open-source Agentic 3D-Avatar Empathetic Live Chatbot](https://arxiv.org/abs/2608.04709) | ArXiv 2026 | [Code](https://github.com/1114531938/EmpaAva_System) | [Project](https://empaava.top/) | conversational avatar, lip-sync, empathetic chatbot, live interaction |
+| 2026 | [STEER: Steerable Dyadic Head Avatars](https://arxiv.org/abs/2607.23840) | ArXiv 2026 | [Code](https://github.com/Kartik-Teotia/STEER) | [Project](https://kartik-teotia.github.io/STEER) | 3DGS, dyadic, conversational head, Gaussian avatar, listener |
+| 2026 | [OmniMate: Open-Ended Real-Time Streaming Audio-Visual Generation for Interactive Avatars](https://arxiv.org/abs/2607.23023) | ArXiv 2026 |  |  | interactive avatar, multi-turn, listening, streaming, audio-visual |
+| 2026 | [MaAI: Real-time Generation of Listener Nodding via Prediction of Kinematic Parameters for Avatar Dialogue Systems](https://arxiv.org/abs/2607.12329) | ICMI 2026 | [Code](https://github.com/MaAI-Kyoto/MaAI) | [Project](https://maai-kyoto.github.io/MaAI/) | listener nodding, dyadic, avatar dialogue, VAP, real-time |
+| 2026 | [Learn2Chat: Rethinking Dyadic Talking Heads via Interaction-Modulated Monologic Priors](https://arxiv.org/abs/2607.10313) | ArXiv 2026 |  | [Project](https://zikaihuangscut.github.io/Learn2Chat/) | dyadic, conversational motion, talking head, interaction |
+| 2026 | [CHAT: Conversational Human Audio-visual Talking Dialogue Generation](https://arxiv.org/abs/2607.02799) | ECCV 2026 |  |  | dyadic dialogue, talking face, interactive avatar, audio-visual |
+| 2026 | [InterTalk: Towards Flexible, Natural, Efficient Interaction for Conversational Talking Face Generation](https://arxiv.org/abs/2606.31088) | ArXiv 2026 |  | [Project](https://bq-wang0511.github.io/InterTalk) | conversational talking face, multi-party, listener feedback, real-time |
+| 2026 | [FacePlex: Full-Duplex Joint Speech-Facial Motion Generation for Conversational Avatars](https://arxiv.org/abs/2606.30145) | ArXiv 2026 |  | [Project](https://hahminlew.github.io/faceplex) | full-duplex, conversational avatar, facial motion, speech generation |
+| 2026 | [MindFlow: Harmonizing Cognitive Semantics and Acoustic Dynamics for Facial Animation Generation in Dyadic Conversations](https://arxiv.org/abs/2606.27779) | ECCV 2026 |  | [Project](https://harryxd2018.github.io/MindFlow/) | dyadic, listener, facial animation, talking-and-listening, flow matching |
+| 2026 | [InteractiveAvatar: Real-Time Streaming Video Generation for Consistent and Intent-Aware Avatars](https://arxiv.org/abs/2606.22905) | ArXiv 2026 |  |  | interactive avatar, intent-aware, streaming, listening, audio-driven |
+| 2026 | [Resonant Minds: Closed-Loop Social Avatars with Theory of Mind](https://arxiv.org/abs/2606.05896) | ArXiv 2026 | [Code](https://github.com/ResonantMinds/ResonantMinds) | [Project](https://resonantminds.github.io) | social avatar, theory of mind, listener, talking face |
+| 2026 | [DyaPlex: Full-Duplex Speech-Motion Model for Dyadic Interaction](https://arxiv.org/abs/2606.03874) | ArXiv 2026 |  | [Project](https://research.nvidia.com/labs/amri/projects/DyaPlex) | dyadic interaction, full-duplex, speech-motion, DyaPlex, streaming |
 | 2026 | [EmbodiedHead: Real-Time Listening and Speaking Avatar for Conversational Agents](https://arxiv.org/abs/2604.17211) | ArXiv 2026 |  |  | listening-speaking, DiT, rectified flow, real-time avatar |
 | 2026 | [Beyond Monologue: Interactive Talking-Listening Avatar Generation with Conversational Audio Context-Aware Kernels](https://arxiv.org/abs/2604.10367) | ArXiv 2026 |  | [Project](https://warmcongee.github.io/beyond-monologue) | talking-listening, interactive, full-duplex, conversational |
 | 2026 | [PolySLGen: Online Multimodal Speaking-Listening Reaction Generation in Polyadic Interaction](https://arxiv.org/abs/2604.08125) | ArXiv 2026 | [Code](https://github.com/zylinzy/PolySLGen) |  | polyadic interaction, speaking-listening, multimodal reaction |
@@ -905,6 +969,18 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 | Year | Title | Conference/Journal | Code | Project | Keywords |
 | ---- | ---- | ---- | ---- | ---- | ---- |
+| 2026 | [Puppeteer: Object-Grounded Posture-Aware Co-Speech Gesture Generation](https://arxiv.org/abs/2609.00369) | ArXiv 2026 |  |  | co-speech gesture, object-grounded, diffusion, posture-aware |
+| 2026 | [InteractGesture: Progressive Chunk Guidance for Continuous Streaming Co-Speech Gesture Control](https://arxiv.org/abs/2608.25734) | ECCV 2026 Workshop | [Code](https://github.com/exitudio/InteractGesture) | [Project](https://exitudio.github.io/interactgesture-page) | co-speech gesture, streaming, spatial control, diffusion, InteractGesture |
+| 2026 | [Super Star: Towards Streaming Real-time Interactive Agents for Digital Humans](https://arxiv.org/abs/2608.24909) | ACM MM 2026 | [Code](https://github.com/PeterIverson/Super-Star) | [Project](https://super-star-2026.github.io) | co-speech gesture, streaming, digital human, real-time, Super Star |
+| 2026 | [Multi-View Face and Gesture Animation with Dynamic Gaussians](https://arxiv.org/abs/2608.04722) | SCA 2026 |  | [Project](https://dfki-av.github.io/MVFGA) | 3DGS, upper-body avatar, face and hands, animatable, multi-view |
+| 2026 | [StreamTalk: Streaming Co-Speech Gesture Generation with Key-Pose Anchoring](https://arxiv.org/abs/2608.01643) | ECCV 2026 | [Code](https://github.com/Xiangyue-Zhang/StreamTalk) | [Project](https://xiangyue-zhang.github.io/StreamTalk) | co-speech gesture, streaming, key-pose, StreamTalk, DiT |
+| 2026 | [SICAGE: Speaker-Independent Culture-Aware Gesture Generation using TED4C-L Dataset](https://arxiv.org/abs/2606.30001) | ECCV 2026 |  |  | co-speech gesture, culture-aware, SICAGE, TED4C-L, diffusion |
+| 2026 | [EMOSH: Expressive Motion and Shape Disentanglement for Human Animation](https://arxiv.org/abs/2606.28026) | ECCV 2026 | [Code](https://github.com/EastbeanZhang/EMOSH) | [Project](https://eastbeanzhang.github.io/EMOSH) | full-body avatar, video-driven, expression, shape disentanglement, human animation |
+| 2026 | [SiGnature: Explicit Motion Diffusion for Stylized Semantic Gesture](https://arxiv.org/abs/2606.15889) | ArXiv 2026 |  |  | co-speech gesture, semantic gesture, style, diffusion, SiGnature |
+| 2026 | [Semantic Motion Anchors: Bridging Motion and Meaning in Co-Speech Gestures](https://arxiv.org/abs/2605.30608) | ArXiv 2026 |  |  | co-speech gesture, text-to-gesture, retrieval, semantic anchors, BEAT2 |
+| 2026 | [EchoAvatar: Real-time Generative Avatar Animation from Audio Streams](https://arxiv.org/abs/2605.28272) | SIGGRAPH 2026 | [Code](https://github.com/RobinWitch/EchoAvatar) | [Project](https://robinwitch.github.io/EchoAvatar-Page) | full-body motion, co-speech, streaming, speech and music, 3D character |
+| 2026 | [LongCat-Video-Avatar 1.5 Technical Report](https://arxiv.org/abs/2605.26486) | ArXiv 2026 | [Code](https://github.com/meituan-longcat/LongCat-Video) | [Project](https://meigen-ai.github.io/LongCat-Video-Avatar-1.5-Page) | audio-driven, full-body avatar, lip-sync, long video, human animation |
+| 2026 | [DuoGesture: Neuro-Inspired and Biomechanically Informed Dual-Stream Co-Speech Gesture Generation](https://arxiv.org/abs/2605.26236) | ArXiv 2026 |  | [Project](https://duogesture.github.io/DuoGesture/) | co-speech gesture, DuoGesture, semantic-beat, dual-stream |
 | 2026 | [UMo: Unified Sparse Motion Modeling for Real-Time Co-Speech Avatars](https://arxiv.org/abs/2605.14731) | ArXiv 2026 |  |  | co-speech avatar, real-time, mixture-of-experts, gesture generation, unified motion |
 | 2026 | [PersonaGest: Personalized Co-Speech Gesture Generation with Semantic-Guided Hierarchical Motion Representation](https://arxiv.org/abs/2605.07252) | ArXiv 2026 |  | [Project](https://danny-nus.github.io/PersonaGest) | co-speech gesture, personalization, VQ-VAE, semantic-aware, motion generation |
 | 2026 | [PersonaGesture: Single-Reference Co-Speech Gesture Personalization for Unseen Speakers](https://arxiv.org/abs/2605.06064) | ArXiv 2026 |  | [Project](https://xiangyue-zhang.github.io/PersonaGesture) | co-speech gesture, personalization, diffusion, style transfer, single-reference |
@@ -982,6 +1058,9 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 | Year | Title | Conference/Journal | Code | Project | Keywords |
 | ---- | ---- | ---- | ---- | ---- | ---- |
+| 2026 | [RoboGesture: Real-Time Semantic-aligned Co-Speech Gestures Generation for Humanoid Interaction](https://arxiv.org/abs/2608.28693) | ECCV 2026 |  | [Project](https://RoboGesture.github.io) | humanoid robot, co-speech gesture, real-time, HRI |
+| 2026 | [Generating Natural and Expressive Robot Gestures through Iterative Reinforcement Learning with Human Feedback using LLMs](https://arxiv.org/abs/2606.18747) | ArXiv 2026 |  |  | humanoid robot, Pepper, co-speech gesture, LLM, HRI |
+| 2026 | [WaveSync: Constrained Wavefront Optimization for Synchronized Co-Speech Gestures in Humanoid Robots](https://arxiv.org/abs/2606.16600) | ArXiv 2026 | [Code](https://github.com/pairs-lab/WaveSync) |  | humanoid robot, co-speech gesture, WaveSync, synchronization, DMP |
 | 2026 | [Efficient Emotion-Aware Iconic Gesture Prediction for Robot Co-Speech](https://arxiv.org/abs/2604.11417) | ArXiv 2026 |  |  | co-speech gesture, robot, iconic gesture, emotion-aware |
 | 2026 | [Realistic Lip Motion Generation Based on 3D Dynamic Viseme and Coarticulation Modeling for Human-Robot Interaction](https://arxiv.org/abs/2604.01756) | ArXiv 2026 | [Code](https://github.com/yuesheng21/Phoneme-to-Lip-14DOF) |  | lip sync, 3D viseme, coarticulation, humanoid robot, ARKit |
 | 2026 | [Empathetic Motion Generation for Humanoid Educational Robots via Reasoning-Guided Vision-Language-Motion Diffusion](https://arxiv.org/abs/2603.18771) | ArXiv 2026 |  |  | Empathetic Motion, Humanoid Robot, Gesture Generation |
@@ -1023,6 +1102,8 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 | Year | Paper | Conference | Keywords |
 |------|-------|------------|----------|
+| 2026 | [Temporally-Aligned Evaluation for Audio-Driven Talking Head Generation](https://arxiv.org/abs/2606.01031) | ArXiv 2026 | talking-head evaluation, Soft DTW, temporal alignment |
+| 2026 | [FMReward: Aligning and Evaluating Audio-Driven 3D Facial Animation with Human Preferences](https://arxiv.org/abs/2608.15296) | IEEE TVCG | 3D facial animation, human preference, reward model |
 | 2025 | [NTIRE 2025 XGC Quality Assessment Challenge: Methods and Results](http://arxiv.org/abs/2506.02875) | ArXiv 2025 | quality assessment, talking head, challenge, THQA-NTIRE |
 
 ---
