@@ -1,5 +1,10 @@
 # Awesome-Talking-Head-Synthesis
 
+🌐 **Website:** [https://kedreamix.github.io/Awesome-Talking-Head-Synthesis/](https://kedreamix.github.io/Awesome-Talking-Head-Synthesis/)
+
+The README below is the complete paper list. For search, filters, bilingual browsing, and category overview, please use the website.
+
+- [Website](https://kedreamix.github.io/Awesome-Talking-Head-Synthesis/)
 - [Datasets](#datasets)
 - [Survey](#survey)
 - [Funny Work](#funny-work)
@@ -17,17 +22,27 @@
 - [References](#references)
 - [Star History](#star-history)
 
-This repository organizes papers, codes and resources related to generative adversarial networks (GANs) 🤗 and neural radiance fields (NeRF) 🎨, with a main focus on image-driven and audio-driven talking head synthesis papers and released codes. 👤
+This repository organizes papers, codes, datasets and project pages for **Talking Head Synthesis**, covering audio-driven avatars, portrait animation, NeRF / 3D heads, 3D Gaussian Splatting, conversational agents, talking body, and more. 👤
 
 Papers for Talking Head Synthesis, released codes collections. ✍️
 
 Most papers are linked to PDFs on "arXiv" or journal/conference websites 📚. However, some papers require an academic license to view 🔐.
 
-🔆 This project Awesome-Talking-Head-Synthesis is ongoing - pull requests are welcome! If you have any suggestions (missing papers, new papers, key researchers or typos), please feel free to edit and submit a PR. You can also open an issue or contact me directly via email. 📩
+🔆 This project Awesome-Talking-Head-Synthesis is ongoing - pull requests are welcome! If you have any suggestions (missing papers, new papers, key researchers or typos), please feel free to edit and submit a PR. You can also [open an issue](https://github.com/Kedreamix/Awesome-Talking-Head-Synthesis/issues/new/choose) or contact me directly via email. 📩
 
 ⭐ If you find this repo useful, please give it a star! 🤩
 
 
+
+**2026.09 Update** 📆
+
+The paper list has grown large enough that browsing only in the README is no longer convenient, so I launched an interactive website:
+
+👉 [https://kedreamix.github.io/Awesome-Talking-Head-Synthesis/](https://kedreamix.github.io/Awesome-Talking-Head-Synthesis/)
+
+You can search papers, filter by category and year, switch between English / 中文, and use dark mode. If you find a missing paper or want to suggest a new category, please submit it through the website or GitHub Issues. 🙌
+
+⭐ If the site helps you, please star the repo — it really motivates continued updates!
 
 **2023.12 Update** 📆
 
