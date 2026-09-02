@@ -95,19 +95,22 @@
     </div>
   </section>
 
-  <section class="community shell">
+  <section class="community shell" id="contribute">
     <div class="community__icon" aria-hidden="true">
       <svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18"/></svg>
     </div>
     <div class="community__copy">
       <p class="eyebrow"><span></span><b data-i18n="community.eyebrow">Community curated</b></p>
-      <h2 data-i18n="community.title">Know a paper we missed?</h2>
-      <p data-i18n="community.description">Recommend a new or missing paper through a short GitHub form. Include its title and link—we’ll review it for the next catalog update.</p>
+      <h2 data-i18n="community.title">Know something we missed?</h2>
+      <p data-i18n="community.description">Recommend a missing paper, or tell us when a listed work released code or was accepted. A short GitHub form is enough—we’ll review it for the next catalog update.</p>
       <small id="generated" data-i18n="community.loading">Catalog update date loading…</small>
     </div>
     <div class="community__actions">
       <a class="button button--accent button--large" href="https://github.com/Kedreamix/Awesome-Talking-Head-Synthesis/issues/new?template=paper-suggestion.yml" target="_blank" rel="noopener noreferrer">
         <span data-i18n="community.suggest">Suggest a paper</span><span aria-hidden="true">↗</span>
+      </a>
+      <a class="button button--ghost button--large" href="https://github.com/Kedreamix/Awesome-Talking-Head-Synthesis/issues/new?template=paper-update.yml" target="_blank" rel="noopener noreferrer">
+        <span data-i18n="community.update">Report an update</span><span aria-hidden="true">↗</span>
       </a>
       <a class="community__issues" href="https://github.com/Kedreamix/Awesome-Talking-Head-Synthesis/issues" target="_blank" rel="noopener noreferrer" data-i18n="community.view">View existing suggestions</a>
     </div>
@@ -179,6 +182,7 @@
     <div class="empty" id="empty" hidden>
       <strong data-i18n="empty.title">No matching papers</strong>
       <span data-i18n="empty.description">Try a broader search or clear the filters.</span>
+      <a class="empty__suggest" href="https://github.com/Kedreamix/Awesome-Talking-Head-Synthesis/issues/new?template=paper-suggestion.yml" target="_blank" rel="noopener noreferrer" data-i18n="empty.suggest">Suggest a missing paper</a>
     </div>
 
     <button class="load-more" id="load-more" type="button" hidden data-i18n="catalog.more">Show more papers</button>

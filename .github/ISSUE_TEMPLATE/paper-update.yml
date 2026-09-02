@@ -1,0 +1,92 @@
+name: Update a paper / 更新论文信息
+description: Report released code, an accepted venue, or catalog corrections / 反馈代码开源、论文中稿或目录勘误
+title: "[Update] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form when a paper is already in the catalog, but its listing is out of date.
+
+        Typical updates:
+        - official code was released or the repository URL changed
+        - a preprint was accepted (venue / year should change)
+        - a project page, dataset, or other link should be added
+
+        请在论文**已经收录**、但条目需要更新时使用此表单。常见情况包括代码开源、预印本中稿、补充项目主页等。
+
+        If the paper is not listed yet, please use the [Suggest a paper](https://github.com/Kedreamix/Awesome-Talking-Head-Synthesis/issues/new?template=paper-suggestion.yml) form instead.
+
+        若论文尚未收录，请改用「推荐论文」表单。
+
+  - type: input
+    id: title
+    attributes:
+      label: Paper title / 论文标题
+      description: Use the title as it appears on the website. / 请填写网站上显示的论文标题。
+      placeholder: Full title of the listed paper / 已收录论文的完整标题
+    validations:
+      required: true
+
+  - type: input
+    id: paper
+    attributes:
+      label: Paper URL / 论文链接
+      description: arXiv, conference, or catalog link that identifies the existing entry. / 用于定位已有条目的 arXiv、会议或目录链接。
+      placeholder: https://arxiv.org/abs/...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: update_type
+    attributes:
+      label: What changed? / 更新类型
+      description: Choose the closest option. You can add details below. / 请选择最接近的类型，细节可在下方补充。
+      options:
+        - Code released / 代码开源
+        - Code repository updated / 仓库地址更新
+        - Paper accepted / 论文中稿
+        - Project page added / 补充项目主页
+        - Venue or metadata correction / 会议或信息勘误
+        - Other / 其他
+    validations:
+      required: true
+
+  - type: input
+    id: code
+    attributes:
+      label: Code URL / 代码链接
+      description: Official implementation, or the updated repository URL. Leave blank if not applicable. / 官方实现或更新后的仓库地址；不适用可留空。
+      placeholder: https://github.com/owner/repository
+
+  - type: input
+    id: venue
+    attributes:
+      label: Accepted venue / 中稿会议或期刊
+      description: For example CVPR 2026, NeurIPS 2025, IEEE TPAMI. Leave blank if not a venue update. / 例如 CVPR 2026；若不是中稿更新可留空。
+      placeholder: CVPR 2026
+
+  - type: input
+    id: project
+    attributes:
+      label: Project page / 项目主页
+      description: Leave blank if unchanged. / 无变化可留空。
+      placeholder: https://example.github.io/project
+
+  - type: textarea
+    id: details
+    attributes:
+      label: What should we change? / 需要修改的内容
+      description: Briefly describe the update and any source we can verify. / 请简要说明应修改的内容，并尽量提供可核验来源。
+      placeholder: Official code was released at … / The paper was accepted at … / 官方代码已开源…… / 论文已被……接收
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks / 提交确认
+      options:
+        - label: This paper is already listed in the catalog. / 该论文已在目录中收录。
+          required: true
+        - label: I searched existing issues to avoid a duplicate update. / 我已搜索已有 Issue，避免重复提交。
+          required: true

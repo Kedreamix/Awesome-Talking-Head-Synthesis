@@ -12,6 +12,7 @@ const state = {
 };
 
 const REPO_API = "https://api.github.com/repos/Kedreamix/Awesome-Talking-Head-Synthesis";
+const ISSUE_NEW = "https://github.com/Kedreamix/Awesome-Talking-Head-Synthesis/issues/new";
 
 const TRANSLATIONS = {
   en: {
@@ -28,10 +29,11 @@ const TRANSLATIONS = {
     "stats.projects": "project pages",
     "stats.stars": "GitHub stars",
     "community.eyebrow": "Community curated",
-    "community.title": "Know a paper we missed?",
-    "community.description": "Recommend a new or missing paper through a short GitHub form. Include its title and link—we’ll review it for the next catalog update.",
+    "community.title": "Know something we missed?",
+    "community.description": "Recommend a missing paper, or tell us when a listed work released code or was accepted. A short GitHub form is enough—we’ll review it for the next catalog update.",
     "community.loading": "Catalog update date loading…",
     "community.suggest": "Suggest a paper",
+    "community.update": "Report an update",
     "community.view": "View existing suggestions",
     "areas.eyebrow": "Research areas",
     "areas.title": "Browse by category",
@@ -52,8 +54,11 @@ const TRANSLATIONS = {
     "links.code": "Code",
     "links.project": "Project",
     "links.data": "Data",
+    "links.update": "Update",
+    "links.updateHint": "Report new code, an accepted venue, or a correction",
     "empty.title": "No matching papers",
     "empty.description": "Try a broader search or clear the filters.",
+    "empty.suggest": "Suggest a missing paper",
     "theme.light": "Switch to light mode",
     "theme.dark": "Switch to dark mode",
     "stars.tracking": "Tracking starts today",
@@ -73,10 +78,11 @@ const TRANSLATIONS = {
     "stats.projects": "论文项目主页",
     "stats.stars": "GitHub 点赞",
     "community.eyebrow": "社区共同维护",
-    "community.title": "发现遗漏的论文？",
-    "community.description": "通过简短的 GitHub 表单推荐新论文或遗漏论文。提交标题和链接，我们会在下一次目录更新时审核。",
+    "community.title": "发现遗漏或有新进展？",
+    "community.description": "推荐尚未收录的论文，或反馈已收录工作新开源的代码、中稿会议。填写简短 GitHub 表单，我们会在下次更新时审核。",
     "community.loading": "正在读取目录更新时间…",
     "community.suggest": "推荐一篇论文",
+    "community.update": "反馈一条更新",
     "community.view": "查看已有推荐",
     "areas.eyebrow": "研究方向",
     "areas.title": "按类别浏览",
@@ -97,8 +103,11 @@ const TRANSLATIONS = {
     "links.code": "代码",
     "links.project": "主页",
     "links.data": "数据",
+    "links.update": "更新",
+    "links.updateHint": "反馈新代码、中稿会议或信息勘误",
     "empty.title": "没有匹配的论文",
     "empty.description": "请尝试更宽泛的关键词或清除筛选条件。",
+    "empty.suggest": "推荐一篇遗漏论文",
     "theme.light": "切换到浅色模式",
     "theme.dark": "切换到夜间模式",
     "stars.tracking": "今日开始记录",
@@ -224,6 +233,19 @@ function link(href, label, className) {
   return `<a class="${className}" href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${label}</a>`;
 }
 
+function issueUrl(template, title) {
+  const params = new URLSearchParams({
+    template,
+    title: String(title || "").slice(0, 240),
+  });
+  return `${ISSUE_NEW}?${params.toString()}`;
+}
+
+function updateLink(paper) {
+  const href = issueUrl("paper-update.yml", `[Update] ${paper.title}`);
+  return `<a class="chip chip--update" href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer" title="${escapeHtml(t("links.updateHint"))}">${t("links.update")}</a>`;
+}
+
 function matches(paper, filters) {
   if (filters.section && paper.section !== filters.section) return false;
   if (filters.year && String(paper.year) !== filters.year) return false;
@@ -293,6 +315,7 @@ function render() {
       link(paper.code, t("links.code"), "chip chip--code"),
       link(paper.project, t("links.project"), "chip chip--project"),
       link(paper.download, t("links.data"), "chip chip--download"),
+      updateLink(paper),
     ].filter(Boolean).join("");
 
     const title = paper.url

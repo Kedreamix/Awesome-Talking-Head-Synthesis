@@ -9,6 +9,10 @@ body:
 
         感谢你帮助完善论文目录。提交前，请先搜索网站和已有 Issue，确认论文尚未收录。
 
+        If the paper is already listed and you want to add code, an accepted venue, or another correction, please use the [Update a paper](https://github.com/Kedreamix/Awesome-Talking-Head-Synthesis/issues/new?template=paper-update.yml) form instead.
+
+        若论文已经收录，只是需要补充代码、中稿会议或其他勘误，请改用「更新论文信息」表单。
+
   - type: input
     id: title
     attributes:
