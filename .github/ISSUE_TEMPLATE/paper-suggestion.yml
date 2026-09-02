@@ -1,0 +1,82 @@
+name: Suggest a paper / 推荐论文
+description: Recommend a missing talking-head synthesis paper / 推荐遗漏的 Talking Head 论文
+title: "[Paper] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the catalog. Please search existing issues and the website before submitting.
+
+        感谢你帮助完善论文目录。提交前，请先搜索网站和已有 Issue，确认论文尚未收录。
+
+  - type: input
+    id: title
+    attributes:
+      label: Paper title / 论文标题
+      placeholder: Full title of the paper / 论文完整标题
+    validations:
+      required: true
+
+  - type: input
+    id: paper
+    attributes:
+      label: Paper URL / 论文链接
+      description: Prefer an arXiv, conference, or journal URL. / 优先提供 arXiv、会议或期刊链接。
+      placeholder: https://arxiv.org/abs/...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: section
+    attributes:
+      label: Suggested section / 推荐分类
+      description: Choose the closest research area. Maintainers may reclassify it. / 请选择最接近的方向，维护者可能会调整分类。
+      options:
+        - Audio-driven / 音频驱动
+        - Portrait Animation / 肖像动画
+        - Text-driven / 文本驱动
+        - NeRF & 3D Head Avatar / NeRF 与 3D 头像
+        - 3D Gaussian Splatting
+        - Conversational & Dialogue / 对话与交互
+        - Talking Body & Avatar / 全身数字人
+        - Robot-Driven Face & Body / 机器人面部与身体
+        - Datasets / 数据集
+        - Metrics / 评测指标
+        - Survey / 综述
+        - Funny Work / 趣味工作
+        - Not sure / 不确定
+    validations:
+      required: true
+
+  - type: input
+    id: code
+    attributes:
+      label: Code URL / 代码链接
+      description: Leave blank if no official implementation is available. / 暂无官方实现可留空。
+      placeholder: https://github.com/owner/repository
+
+  - type: input
+    id: project
+    attributes:
+      label: Project page / 项目主页
+      description: Leave blank if the paper has no project page. / 暂无项目主页可留空。
+      placeholder: https://example.github.io/project
+
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Why should it be included? / 推荐理由
+      description: Briefly explain how the work relates to talking-head synthesis. / 请简要说明它与 Talking Head 合成的关系。
+      placeholder: This paper focuses on... / 这篇论文主要研究……
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks / 提交确认
+      options:
+        - label: I searched the website and existing issues for this paper. / 我已搜索网站和已有 Issue。
+          required: true
+        - label: The paper is relevant to talking-head, face, avatar, or co-speech synthesis. / 论文与 Talking Head、面部、数字人或共语动作合成相关。
+          required: true

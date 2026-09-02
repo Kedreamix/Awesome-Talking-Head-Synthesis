@@ -1,0 +1,57 @@
+name: Suggest a category / 建议分类
+description: Propose a new research category for the catalog / 为论文目录建议新的研究分类
+title: "[Category] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Categories should represent a distinct research direction with multiple relevant papers.
+
+        新类别应代表一个明确的研究方向，并且已有多篇相关论文。
+
+  - type: input
+    id: name
+    attributes:
+      label: Category name / 类别名称
+      placeholder: Proposed category name / 建议的类别名称
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and definition / 范围与定义
+      description: Explain what belongs in this category and what does not. / 请说明该类别应收录和不应收录的内容。
+      placeholder: This category covers... / 这个类别主要涵盖……
+    validations:
+      required: true
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Example papers / 代表论文
+      description: Provide at least three paper titles or URLs when possible. / 请尽量提供至少三篇代表论文的标题或链接。
+      placeholder: |
+        1. Paper title — https://arxiv.org/abs/...
+        2. Paper title — https://arxiv.org/abs/...
+        3. Paper title — https://arxiv.org/abs/...
+    validations:
+      required: true
+
+  - type: textarea
+    id: distinction
+    attributes:
+      label: Difference from existing categories / 与现有类别的区别
+      description: Explain why an existing category is not sufficient. / 请说明为什么当前类别不足以覆盖这一方向。
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks / 提交确认
+      options:
+        - label: I reviewed the current category list before submitting. / 我已查看当前所有类别。
+          required: true
+        - label: This category can include multiple papers, not just one work. / 此类别可以包含多篇论文，而非只适用于单篇工作。
+          required: true
