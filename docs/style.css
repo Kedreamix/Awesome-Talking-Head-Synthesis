@@ -421,6 +421,29 @@ h1 em {
 
 .stat--stars span { color: var(--mint); }
 
+.stat--stars small {
+  margin-top: 7px;
+  color: rgba(255, 255, 255, .72);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.star-sparkline {
+  width: 78px;
+  height: 18px;
+  margin-top: 7px;
+  overflow: visible;
+}
+
+.star-sparkline polyline {
+  fill: none;
+  stroke: var(--orange);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
 .star-history-link {
   margin-top: 7px;
   color: rgba(255, 255, 255, .72);

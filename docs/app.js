@@ -8,6 +8,7 @@ const state = {
     || (navigator.language.toLowerCase().startsWith("zh") ? "zh" : "en"),
   generatedAt: "",
   stars: null,
+  starHistory: [],
 };
 
 const REPO_API = "https://api.github.com/repos/Kedreamix/Awesome-Talking-Head-Synthesis";
@@ -29,6 +30,7 @@ const TRANSLATIONS = {
     "stats.projects": "project pages",
     "stats.stars": "GitHub stars",
     "stats.history": "Star history",
+    "stars.tracking": "Tracking starts today",
     "community.eyebrow": "Community curated",
     "community.title": "Know something we missed?",
     "community.description": "Recommend a missing paper, or tell us when a listed work released code or was accepted. A short GitHub form is enough—we’ll review it for the next catalog update.",
@@ -77,6 +79,7 @@ const TRANSLATIONS = {
     "stats.projects": "论文项目主页",
     "stats.stars": "GitHub 点赞",
     "stats.history": "点赞趋势",
+    "stars.tracking": "今日开始记录",
     "community.eyebrow": "社区共同维护",
     "community.title": "发现遗漏或有新进展？",
     "community.description": "推荐尚未收录的论文，或反馈已收录工作新开源的代码、中稿会议。填写简短 GitHub 表单，我们会在下次更新时审核。",
@@ -177,6 +180,7 @@ function setLanguage(lang) {
   applyTranslations();
   updateGeneratedText();
   if (state.stars !== null) updateStarText(state.stars);
+  else renderStarHistory();
   if (state.papers.length) {
     renderAreas();
     render();
@@ -370,6 +374,96 @@ function updateStarText(stars) {
     : `${stars.toLocaleString("en-US")} GitHub stars`;
   $("nav-star-count").title = label;
   $("hero-star-count").title = label;
+  renderStarHistory();
+}
+
+function shanghaiToday() {
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Shanghai",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(new Date());
+}
+
+function nextDate(iso) {
+  const [year, month, day] = iso.split("-").map(Number);
+  const date = new Date(Date.UTC(year, month - 1, day + 1));
+  return date.toISOString().slice(0, 10);
+}
+
+function dailySeries(history, today, current) {
+  const points = [...history].sort((a, b) => a.date.localeCompare(b.date));
+  if (!points.length) return [];
+
+  const byDate = new Map(points.map((point) => [point.date, point.stars]));
+  const series = [];
+  let cursor = points[0].date;
+  let value = points[0].stars;
+  while (cursor <= today) {
+    if (byDate.has(cursor)) value = byDate.get(cursor);
+    series.push({ date: cursor, stars: cursor === today && current != null ? current : value });
+    cursor = nextDate(cursor);
+    if (series.length > 5000) break;
+  }
+  return series;
+}
+
+function renderStarHistory() {
+  const history = [...state.starHistory].sort((a, b) => a.date.localeCompare(b.date));
+  if (!history.length) {
+    $("star-delta").textContent = "";
+    $("star-sparkline").hidden = true;
+    return;
+  }
+
+  const today = shanghaiToday();
+  const current = state.stars ?? history[history.length - 1].stars;
+  const previous = [...history].reverse().find((entry) => entry.date < today);
+
+  if (previous) {
+    const delta = current - previous.stars;
+    const signed = `${delta >= 0 ? "+" : ""}${delta.toLocaleString()}`;
+    $("star-delta").textContent = state.lang === "zh"
+      ? `今日 ${signed}`
+      : `${signed} today`;
+  } else {
+    $("star-delta").textContent = t("stars.tracking");
+  }
+
+  const visible = dailySeries(history, today, current).slice(-30);
+  if (visible.length < 2) {
+    $("star-sparkline").hidden = true;
+    return;
+  }
+
+  const values = visible.map((entry) => entry.stars);
+  const min = Math.min(...values);
+  const max = Math.max(...values);
+  const range = Math.max(max - min, 1);
+  const points = visible.map((entry, index) => {
+    const x = visible.length === 1 ? 0 : (index / (visible.length - 1)) * 100;
+    const y = 21 - ((entry.stars - min) / range) * 18;
+    return `${x.toFixed(1)},${y.toFixed(1)}`;
+  }).join(" ");
+  $("star-sparkline-line").setAttribute("points", points);
+  $("star-sparkline").hidden = false;
+}
+
+async function loadStarHistory() {
+  try {
+    const res = await fetch("./star-history.json");
+    if (!res.ok) throw new Error(`Star history returned ${res.status}`);
+    const data = await res.json();
+    state.starHistory = Array.isArray(data.history) ? data.history : [];
+    if (state.stars === null && Number.isFinite(Number(data.count))) {
+      updateStarText(Number(data.count));
+    } else {
+      renderStarHistory();
+    }
+  } catch (err) {
+    console.warn("Could not load star history", err);
+  }
 }
 
 async function fetchStarCount() {
@@ -448,6 +542,7 @@ async function init() {
   });
   $("theme-toggle").addEventListener("click", toggleTheme);
   render();
+  loadStarHistory();
   loadGithubStats();
 }
 

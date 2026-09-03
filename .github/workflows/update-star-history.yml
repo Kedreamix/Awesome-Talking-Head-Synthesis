@@ -1,0 +1,43 @@
+name: Update star history
+
+on:
+  schedule:
+    # 00:15 UTC / 08:15 China Standard Time
+    - cron: "15 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-star-history
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Rebuild history from GitHub star timestamps
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update_star_history.py
+
+      - name: Commit reconstructed snapshot
+        run: |
+          git add docs/star-history.json
+          if git diff --cached --quiet; then
+            echo "Star history is already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Rebuild GitHub star history from stargazer timestamps"
+          git push
