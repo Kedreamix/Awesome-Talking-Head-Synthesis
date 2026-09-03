@@ -8,10 +8,10 @@ const state = {
     || (navigator.language.toLowerCase().startsWith("zh") ? "zh" : "en"),
   generatedAt: "",
   stars: null,
-  starHistory: [],
 };
 
 const REPO_API = "https://api.github.com/repos/Kedreamix/Awesome-Talking-Head-Synthesis";
+const STARS_COUNT_API = `${REPO_API}/stargazers/count`;
 const ISSUE_NEW = "https://github.com/Kedreamix/Awesome-Talking-Head-Synthesis/issues/new";
 
 const TRANSLATIONS = {
@@ -28,6 +28,7 @@ const TRANSLATIONS = {
     "stats.code": "open-source implementations",
     "stats.projects": "project pages",
     "stats.stars": "GitHub stars",
+    "stats.history": "Star history",
     "community.eyebrow": "Community curated",
     "community.title": "Know something we missed?",
     "community.description": "Recommend a missing paper, or tell us when a listed work released code or was accepted. A short GitHub form is enough—we’ll review it for the next catalog update.",
@@ -61,8 +62,6 @@ const TRANSLATIONS = {
     "empty.suggest": "Suggest a missing paper",
     "theme.light": "Switch to light mode",
     "theme.dark": "Switch to dark mode",
-    "stars.tracking": "Tracking starts today",
-    "stars.today": "today",
   },
   zh: {
     "nav.explore": "浏览论文",
@@ -77,6 +76,7 @@ const TRANSLATIONS = {
     "stats.code": "开源代码实现",
     "stats.projects": "论文项目主页",
     "stats.stars": "GitHub 点赞",
+    "stats.history": "点赞趋势",
     "community.eyebrow": "社区共同维护",
     "community.title": "发现遗漏或有新进展？",
     "community.description": "推荐尚未收录的论文，或反馈已收录工作新开源的代码、中稿会议。填写简短 GitHub 表单，我们会在下次更新时审核。",
@@ -110,8 +110,6 @@ const TRANSLATIONS = {
     "empty.suggest": "推荐一篇遗漏论文",
     "theme.light": "切换到浅色模式",
     "theme.dark": "切换到夜间模式",
-    "stars.tracking": "今日开始记录",
-    "stars.today": "今日",
   },
 };
 
@@ -179,7 +177,6 @@ function setLanguage(lang) {
   applyTranslations();
   updateGeneratedText();
   if (state.stars !== null) updateStarText(state.stars);
-  else renderStarHistory();
   if (state.papers.length) {
     renderAreas();
     render();
@@ -373,84 +370,26 @@ function updateStarText(stars) {
     : `${stars.toLocaleString("en-US")} GitHub stars`;
   $("nav-star-count").title = label;
   $("hero-star-count").title = label;
-  renderStarHistory();
 }
 
-function renderStarHistory() {
-  const history = [...state.starHistory].sort((a, b) => a.date.localeCompare(b.date));
-  if (!history.length) {
-    $("star-delta").textContent = "";
-    return;
+async function fetchStarCount() {
+  const headers = { Accept: "application/vnd.github+json" };
+  const countRes = await fetch(STARS_COUNT_API, { headers });
+  if (countRes.ok) {
+    const data = await countRes.json();
+    const count = Number(data.count);
+    if (Number.isFinite(count)) return count;
   }
 
-  const today = new Intl.DateTimeFormat("en-CA", {
-    timeZone: "Asia/Shanghai",
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-  }).format(new Date());
-  const current = state.stars ?? history[history.length - 1].stars;
-  const previous = [...history].reverse().find((entry) => entry.date < today);
-
-  if (previous) {
-    const delta = current - previous.stars;
-    const signed = `${delta >= 0 ? "+" : ""}${delta.toLocaleString()}`;
-    $("star-delta").textContent = state.lang === "zh"
-      ? `今日 ${signed}`
-      : `${signed} today`;
-  } else {
-    $("star-delta").textContent = t("stars.tracking");
-  }
-
-  const chart = history.map((entry) => ({ ...entry }));
-  const todayEntry = chart.find((entry) => entry.date === today);
-  if (todayEntry) todayEntry.stars = current;
-  else chart.push({ date: today, stars: current });
-
-  if (chart.length < 2) {
-    $("star-sparkline").hidden = true;
-    return;
-  }
-
-  const visible = chart.slice(-30);
-  const values = visible.map((entry) => entry.stars);
-  const min = Math.min(...values);
-  const max = Math.max(...values);
-  const range = Math.max(max - min, 1);
-  const points = visible.map((entry, index) => {
-    const x = visible.length === 1 ? 0 : (index / (visible.length - 1)) * 100;
-    const y = 21 - ((entry.stars - min) / range) * 18;
-    return `${x.toFixed(1)},${y.toFixed(1)}`;
-  }).join(" ");
-  $("star-sparkline-line").setAttribute("points", points);
-  $("star-sparkline").hidden = false;
-}
-
-async function loadStarHistory() {
-  try {
-    const res = await fetch("./star-history.json");
-    if (!res.ok) throw new Error(`Star history returned ${res.status}`);
-    const data = await res.json();
-    state.starHistory = Array.isArray(data.history) ? data.history : [];
-    if (state.stars === null && state.starHistory.length) {
-      updateStarText(state.starHistory[state.starHistory.length - 1].stars);
-    } else {
-      renderStarHistory();
-    }
-  } catch (err) {
-    console.warn("Could not load star history", err);
-  }
+  const repoRes = await fetch(REPO_API, { headers });
+  if (!repoRes.ok) throw new Error(`GitHub API returned ${repoRes.status}`);
+  const repo = await repoRes.json();
+  return Number(repo.stargazers_count) || 0;
 }
 
 async function loadGithubStats() {
   try {
-    const res = await fetch(REPO_API, {
-      headers: { Accept: "application/vnd.github+json" },
-    });
-    if (!res.ok) throw new Error(`GitHub API returned ${res.status}`);
-    const repo = await res.json();
-    const stars = Number(repo.stargazers_count) || 0;
-    updateStarText(stars);
+    updateStarText(await fetchStarCount());
   } catch (err) {
     if (state.stars === null) {
       $("star-stat").textContent = state.lang === "zh" ? "查看" : "View";
@@ -509,7 +448,6 @@ async function init() {
   });
   $("theme-toggle").addEventListener("click", toggleTheme);
   render();
-  loadStarHistory();
   loadGithubStats();
 }
 
