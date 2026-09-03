@@ -1,4 +1,4 @@
-name: Update daily star history
+name: Update star history
 
 on:
   schedule:
@@ -25,12 +25,12 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Record current stars
+      - name: Rebuild history from GitHub star timestamps
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/update_star_history.py
 
-      - name: Commit new snapshot
+      - name: Commit reconstructed snapshot
         run: |
           git add docs/star-history.json
           if git diff --cached --quiet; then
@@ -39,5 +39,5 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Update daily GitHub star history"
+          git commit -m "Rebuild GitHub star history from stargazer timestamps"
           git push
