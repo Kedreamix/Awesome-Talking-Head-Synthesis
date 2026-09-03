@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Open the catalog website / 打开论文目录网站
+    url: https://kedreamix.github.io/Awesome-Talking-Head-Synthesis/
+    about: Search the catalog before submitting a new paper or an update. / 提交新论文或更新前，请先在网站上搜索是否已收录。
