@@ -429,11 +429,17 @@ function weeklyAddedFromDaily(daily) {
     .map(([date, added]) => ({ date, added }));
 }
 
+function setHidden(id, hide) {
+  const el = $(id);
+  if (hide) el.setAttribute("hidden", "");
+  else el.removeAttribute("hidden");
+}
+
 function renderStarHistory() {
   const history = [...state.starHistory].sort((a, b) => a.date.localeCompare(b.date));
   if (!history.length) {
     $("star-delta").textContent = "";
-    $("star-sparkline").hidden = true;
+    setHidden("star-sparkline", true);
     return;
   }
 
@@ -459,7 +465,7 @@ function renderStarHistory() {
 
   const visible = weeklyAddedFromDaily(daily).slice(-16);
   if (visible.length < 2) {
-    $("star-sparkline").hidden = true;
+    setHidden("star-sparkline", true);
     return;
   }
 
@@ -473,7 +479,7 @@ function renderStarHistory() {
     return `${x.toFixed(1)},${y.toFixed(1)}`;
   }).join(" ");
   $("star-sparkline-line").setAttribute("points", points);
-  $("star-sparkline").hidden = false;
+  setHidden("star-sparkline", false);
 }
 
 async function loadStarHistory() {
