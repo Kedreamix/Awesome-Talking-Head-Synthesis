@@ -30,7 +30,7 @@ const TRANSLATIONS = {
     "stats.projects": "project pages",
     "stats.stars": "GitHub stars",
     "stats.history": "Star history",
-    "stars.tracking": "Tracking starts today",
+    "stars.tracking": "Waiting for weekly data",
     "community.eyebrow": "Community curated",
     "community.title": "Know something we missed?",
     "community.description": "Recommend a missing paper, or tell us when a listed work released code or was accepted. A short GitHub form is enough—we’ll review it for the next catalog update.",
@@ -79,7 +79,7 @@ const TRANSLATIONS = {
     "stats.projects": "论文项目主页",
     "stats.stars": "GitHub 点赞",
     "stats.history": "点赞趋势",
-    "stars.tracking": "今日开始记录",
+    "stars.tracking": "周数据不足",
     "community.eyebrow": "社区共同维护",
     "community.title": "发现遗漏或有新进展？",
     "community.description": "推荐尚未收录的论文，或反馈已收录工作新开源的代码、中稿会议。填写简短 GitHub 表单，我们会在下次更新时审核。",
@@ -392,6 +392,14 @@ function nextDate(iso) {
   return date.toISOString().slice(0, 10);
 }
 
+function mondayOf(iso) {
+  const [year, month, day] = iso.split("-").map(Number);
+  const date = new Date(Date.UTC(year, month - 1, day));
+  const weekday = date.getUTCDay();
+  date.setUTCDate(date.getUTCDate() - (weekday === 0 ? 6 : weekday - 1));
+  return date.toISOString().slice(0, 10);
+}
+
 function dailySeries(history, today, current) {
   const points = [...history].sort((a, b) => a.date.localeCompare(b.date));
   if (!points.length) return [];
@@ -409,45 +417,69 @@ function dailySeries(history, today, current) {
   return series;
 }
 
+function weeklyAddedFromDaily(daily) {
+  const addedByWeek = new Map();
+  daily.forEach((day, index) => {
+    const previous = index === 0 ? 0 : daily[index - 1].stars;
+    const week = mondayOf(day.date);
+    addedByWeek.set(week, (addedByWeek.get(week) || 0) + (day.stars - previous));
+  });
+  return [...addedByWeek.entries()]
+    .sort((a, b) => a[0].localeCompare(b[0]))
+    .map(([date, added]) => ({ date, added }));
+}
+
+function setHidden(id, hide) {
+  const el = $(id);
+  if (hide) el.setAttribute("hidden", "");
+  else el.removeAttribute("hidden");
+}
+
 function renderStarHistory() {
   const history = [...state.starHistory].sort((a, b) => a.date.localeCompare(b.date));
   if (!history.length) {
     $("star-delta").textContent = "";
-    $("star-sparkline").hidden = true;
+    setHidden("star-sparkline", true);
     return;
   }
 
   const today = shanghaiToday();
   const current = state.stars ?? history[history.length - 1].stars;
-  const previous = [...history].reverse().find((entry) => entry.date < today);
+  const daily = dailySeries(history, today, current);
+  const thisWeek = mondayOf(today);
+  const beforeWeek = [...daily].reverse().find((entry) => entry.date < thisWeek);
 
-  if (previous) {
-    const delta = current - previous.stars;
+  if (beforeWeek) {
+    const delta = current - beforeWeek.stars;
     const signed = `${delta >= 0 ? "+" : ""}${delta.toLocaleString()}`;
     $("star-delta").textContent = state.lang === "zh"
-      ? `今日 ${signed}`
-      : `${signed} today`;
+      ? `本周 ${signed}`
+      : `${signed} this week`;
+    $("star-delta").title = state.lang === "zh"
+      ? "本周新增 Star（周一至周日，上海时区）"
+      : "Stars added this week (Monday–Sunday, Asia/Shanghai)";
   } else {
     $("star-delta").textContent = t("stars.tracking");
+    $("star-delta").title = "";
   }
 
-  const visible = dailySeries(history, today, current).slice(-30);
+  const visible = weeklyAddedFromDaily(daily).slice(-16);
   if (visible.length < 2) {
-    $("star-sparkline").hidden = true;
+    setHidden("star-sparkline", true);
     return;
   }
 
-  const values = visible.map((entry) => entry.stars);
+  const values = visible.map((entry) => entry.added);
   const min = Math.min(...values);
   const max = Math.max(...values);
   const range = Math.max(max - min, 1);
   const points = visible.map((entry, index) => {
     const x = visible.length === 1 ? 0 : (index / (visible.length - 1)) * 100;
-    const y = 21 - ((entry.stars - min) / range) * 18;
+    const y = 21 - ((entry.added - min) / range) * 18;
     return `${x.toFixed(1)},${y.toFixed(1)}`;
   }).join(" ");
   $("star-sparkline-line").setAttribute("points", points);
-  $("star-sparkline").hidden = false;
+  setHidden("star-sparkline", false);
 }
 
 async function loadStarHistory() {
