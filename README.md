@@ -41,7 +41,7 @@ The paper list has grown large enough that browsing only in the README is no lon
 
 👉 [https://kedreamix.github.io/Awesome-Talking-Head-Synthesis/](https://kedreamix.github.io/Awesome-Talking-Head-Synthesis/)
 
-You can search papers, filter by category and year, switch between English / 中文, and use dark mode. If you find a missing paper, newly released code, an accepted venue, or want to suggest a new category, please submit it through the website or GitHub Issues. 🙌
+You can search papers, browse runnable open-source projects, filter by category and year, switch between English / 中文, and use dark mode. If you find a missing paper or project, newly released code, an accepted venue, or want to suggest a new category, please submit it through the website or GitHub Issues. 🙌
 
 I also added **Open-source Projects** for runnable talking-head systems that are useful to try, but do not have a paper (for example Linly-Talker and NanoAvatar). SadTalker, MuseTalk, Hallo, and similar works stay in the paper tables.
 
