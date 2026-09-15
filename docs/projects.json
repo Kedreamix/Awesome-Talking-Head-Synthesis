@@ -1,0 +1,161 @@
+{
+  "generated_at": "2026-09-15",
+  "count": 12,
+  "projects": [
+    {
+      "year": 2026,
+      "name": "NanoAvatar",
+      "url": "https://github.com/wpydcr/NanoAvatar",
+      "description": {
+        "en": "On-device audio-driven talking avatars for Android and local NVIDIA GPUs, with offline APKs.",
+        "zh": "面向 Android 和本地 NVIDIA GPU 的端侧音频驱动数字人，提供可离线体验的 APK。"
+      },
+      "tags": ["Android", "Audio-driven", "On-device"],
+      "links": [
+        {"label": "weights", "url": "https://huggingface.co/wpydcr/NanoAvatar"},
+        {"label": "apks", "url": "https://github.com/wpydcr/NanoAvatar/releases/latest"}
+      ]
+    },
+    {
+      "year": 2026,
+      "name": "Linly-Talker-Stream",
+      "url": "https://github.com/Kedreamix/Linly-Talker-Stream",
+      "description": {
+        "en": "Full-duplex, low-latency conversational digital human built on a real-time WebRTC streaming pipeline.",
+        "zh": "基于 WebRTC 实时流式管线的全双工、低延迟对话数字人系统。"
+      },
+      "tags": ["Streaming", "WebRTC", "Conversational"],
+      "links": []
+    },
+    {
+      "year": 2026,
+      "name": "CyberVerse",
+      "url": "https://github.com/Lynpoint/CyberVerse",
+      "description": {
+        "en": "Self-hosted real-time digital-human agent platform with WebRTC, memory, tools, RAG, and optional avatar video.",
+        "zh": "可自托管的实时数字人 Agent 平台，支持 WebRTC、记忆、工具、RAG 和可选数字人视频。"
+      },
+      "tags": ["Agent", "WebRTC", "Self-hosted"],
+      "links": [
+        {"label": "site", "url": "https://www.cyberverse.cc"}
+      ]
+    },
+    {
+      "year": 2025,
+      "name": "OpenAvatarChat",
+      "url": "https://github.com/HumanAIGC-Engineering/OpenAvatarChat",
+      "description": {
+        "en": "Modular interactive avatar chat with replaceable ASR, LLM, TTS, and avatar backends.",
+        "zh": "模块化交互数字人对话系统，可替换 ASR、LLM、TTS 和数字人后端。"
+      },
+      "tags": ["Conversational", "Modular", "Real-time"],
+      "links": [
+        {"label": "docs", "url": "https://humanaigc-engineering.github.io/OpenAvatarChat/"},
+        {"label": "demo", "url": "https://huggingface.co/spaces/HumanAIGC-Engineering-Team/open-avatar-chat"}
+      ]
+    },
+    {
+      "year": 2025,
+      "name": "LiteAvatar",
+      "url": "https://github.com/HumanAIGC/lite-avatar",
+      "description": {
+        "en": "Real-time CPU audio-to-face 2D chat avatar and an avatar backend for OpenAvatarChat.",
+        "zh": "可在 CPU 上实时运行的音频驱动 2D 对话数字人，也是 OpenAvatarChat 的数字人后端。"
+      },
+      "tags": ["2D", "CPU", "Audio-driven"],
+      "links": [
+        {"label": "gallery", "url": "https://modelscope.cn/models/HumanAIGC-Engineering/LiteAvatarGallery/summary"}
+      ]
+    },
+    {
+      "year": 2024,
+      "name": "Duix-Avatar",
+      "url": "https://github.com/duixcom/Duix-Avatar",
+      "description": {
+        "en": "Offline avatar toolkit for appearance and voice cloning plus text- or audio-driven video generation.",
+        "zh": "离线数字人工具包，支持形象与声音克隆，以及文本或音频驱动的视频生成。"
+      },
+      "tags": ["Offline", "Cloning", "Video"],
+      "links": [
+        {"label": "site", "url": "https://www.duix.com/"}
+      ]
+    },
+    {
+      "year": 2024,
+      "name": "Ultralight-Digital-Human",
+      "url": "https://github.com/anliyuan/Ultralight-Digital-Human",
+      "description": {
+        "en": "Mobile-friendly real-time 2D digital human, with FeatherTalk as its lighter successor.",
+        "zh": "面向移动端的实时 2D 数字人，后续轻量化版本为 FeatherTalk。"
+      },
+      "tags": ["Mobile", "2D", "Real-time"],
+      "links": [
+        {"label": "successor", "url": "https://github.com/anliyuan/FeatherTalk"}
+      ]
+    },
+    {
+      "year": 2024,
+      "name": "DH_live",
+      "url": "https://github.com/kleinlee/DH_live",
+      "description": {
+        "en": "Lightweight real-time 2D digital human for web and mobile, followed by the multi-platform MatesX engine.",
+        "zh": "面向网页和移动端的轻量实时 2D 数字人，后续演进为多端引擎 MatesX。"
+      },
+      "tags": ["Web", "Mobile", "2D"],
+      "links": [
+        {"label": "successor", "url": "https://github.com/kleinlee/MatesX"}
+      ]
+    },
+    {
+      "year": 2023,
+      "name": "Linly-Talker",
+      "url": "https://github.com/Kedreamix/Linly-Talker",
+      "description": {
+        "en": "Conversational digital human WebUI combining LLM, ASR, TTS, voice cloning, and multiple talking-head backends.",
+        "zh": "整合 LLM、ASR、TTS、声音克隆和多种说话头像后端的对话数字人 WebUI。"
+      },
+      "tags": ["Conversational", "WebUI", "Multi-backend"],
+      "links": [
+        {"label": "weights", "url": "https://huggingface.co/Kedreamix/Linly-Talker"},
+        {"label": "page", "url": "https://kedreamix.github.io/"}
+      ]
+    },
+    {
+      "year": 2023,
+      "name": "LiveTalking",
+      "url": "https://github.com/lipku/LiveTalking",
+      "description": {
+        "en": "Real-time interactive streaming digital human engine supporting Wav2Lip, MuseTalk, ER-NeRF, and other backends.",
+        "zh": "实时交互流式数字人引擎，支持 Wav2Lip、MuseTalk、ER-NeRF 等多种后端。"
+      },
+      "tags": ["Streaming", "WebRTC", "Multi-backend"],
+      "links": [
+        {"label": "site", "url": "https://www.livetalking.ai"}
+      ]
+    },
+    {
+      "year": 2023,
+      "name": "TalkingHead",
+      "url": "https://github.com/met4citizen/TalkingHead",
+      "description": {
+        "en": "Browser JavaScript class for real-time lip-sync using full-body 3D avatars.",
+        "zh": "用于浏览器全身 3D 数字人实时口型同步的 JavaScript 类库。"
+      },
+      "tags": ["Browser", "3D", "JavaScript"],
+      "links": []
+    },
+    {
+      "year": 2022,
+      "name": "VU-VRM",
+      "url": "https://github.com/Automattic/VU-VRM",
+      "description": {
+        "en": "Browser-based real-time lip-sync VRM avatar driven by a microphone without a webcam.",
+        "zh": "无需摄像头、由麦克风驱动的浏览器实时口型同步 VRM 数字人。"
+      },
+      "tags": ["Browser", "VRM", "Microphone"],
+      "links": [
+        {"label": "demo", "url": "https://automattic.github.io/VU-VRM/"}
+      ]
+    }
+  ]
+}

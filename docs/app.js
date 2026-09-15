@@ -2,8 +2,10 @@ const $ = (id) => document.getElementById(id);
 
 const state = {
   papers: [],
+  projects: [],
   sections: [],
   visible: 50,
+  projectsExpanded: false,
   lang: localStorage.getItem("catalog-language")
     || (navigator.language.toLowerCase().startsWith("zh") ? "zh" : "en"),
   generatedAt: "",
@@ -18,12 +20,14 @@ const ISSUE_NEW = "https://github.com/Kedreamix/Awesome-Talking-Head-Synthesis/i
 const TRANSLATIONS = {
   en: {
     "nav.explore": "Explore papers",
+    "nav.projects": "Open-source projects",
     "nav.star": "Star",
     "hero.eyebrow": "Open research index",
     "hero.title1": "The evolving map of",
     "hero.title2": "Talking Head Synthesis",
-    "hero.description": "Discover papers, implementations, datasets and project pages across audio-driven avatars, 3D heads, conversational agents and more.",
+    "hero.description": "Discover papers, implementations, datasets, and runnable open-source systems across audio-driven avatars, 3D heads, conversational agents, and more.",
     "hero.browse": "Browse the collection",
+    "hero.projects": "Explore runnable projects",
     "hero.github": "Support us on GitHub",
     "stats.papers": "research papers",
     "stats.code": "open-source implementations",
@@ -33,7 +37,7 @@ const TRANSLATIONS = {
     "stars.tracking": "Waiting for weekly data",
     "community.eyebrow": "Community curated",
     "community.title": "Know something we missed?",
-    "community.description": "Recommend a missing paper, or tell us when a listed work released code or was accepted. A short GitHub form is enough—we’ll review it for the next catalog update.",
+    "community.description": "Recommend a missing paper or open-source system, or tell us when a listed work released code or was accepted. We’ll review it for the next catalog update.",
     "community.loading": "Catalog update date loading…",
     "community.suggest": "Suggest a paper",
     "community.update": "Report an update",
@@ -42,6 +46,24 @@ const TRANSLATIONS = {
     "areas.title": "Browse by category",
     "areas.description": "See how the collection is organized. Select an area to explore its papers, or propose a new category for future updates.",
     "areas.suggest": "Suggest a new category",
+    "projects.eyebrow": "Run the systems",
+    "projects.title": "Open-source projects",
+    "projects.description": "Runnable talking-head systems, apps, and integration frameworks without a paper listing. Paper implementations remain in the research catalog below.",
+    "projects.suggest": "Suggest a project",
+    "projects.count": "runnable projects",
+    "projects.scope": "Kept separate from paper counts and filters",
+    "projects.more": "Show all projects",
+    "projects.less": "Show fewer projects",
+    "projects.repository": "Repository",
+    "projects.loadError": "Could not load open-source projects.",
+    "resources.weights": "Weights",
+    "resources.apks": "APKs",
+    "resources.site": "Website",
+    "resources.docs": "Docs",
+    "resources.demo": "Demo",
+    "resources.gallery": "Gallery",
+    "resources.successor": "Successor",
+    "resources.page": "Page",
     "catalog.eyebrow": "Explore the archive",
     "catalog.title": "Find your next paper",
     "catalog.description": "Search the full collection or narrow it by research area, year, and available resources.",
@@ -67,12 +89,14 @@ const TRANSLATIONS = {
   },
   zh: {
     "nav.explore": "浏览论文",
+    "nav.projects": "开源项目",
     "nav.star": "点赞",
     "hero.eyebrow": "开放研究索引",
     "hero.title1": "持续演进的",
     "hero.title2": "Talking Head Synthesis",
-    "hero.description": "探索音频驱动数字人、3D 头像、对话智能体等方向的论文、开源实现、数据集与项目主页。",
+    "hero.description": "探索音频驱动数字人、3D 头像、对话智能体等方向的论文、开源实现、数据集和可运行系统。",
     "hero.browse": "浏览全部论文",
+    "hero.projects": "体验开源项目",
     "hero.github": "在 GitHub 上支持我们",
     "stats.papers": "收录研究论文",
     "stats.code": "开源代码实现",
@@ -82,7 +106,7 @@ const TRANSLATIONS = {
     "stars.tracking": "周数据不足",
     "community.eyebrow": "社区共同维护",
     "community.title": "发现遗漏或有新进展？",
-    "community.description": "推荐尚未收录的论文，或反馈已收录工作新开源的代码、中稿会议。填写简短 GitHub 表单，我们会在下次更新时审核。",
+    "community.description": "推荐尚未收录的论文或开源系统，也可以反馈代码开源、中稿会议等更新。我们会在下次目录更新时审核。",
     "community.loading": "正在读取目录更新时间…",
     "community.suggest": "推荐一篇论文",
     "community.update": "反馈一条更新",
@@ -91,6 +115,24 @@ const TRANSLATIONS = {
     "areas.title": "按类别浏览",
     "areas.description": "查看当前论文目录的分类方式。选择一个方向浏览相关论文，也可以为后续更新建议新的类别。",
     "areas.suggest": "建议新增类别",
+    "projects.eyebrow": "运行与体验",
+    "projects.title": "开源项目",
+    "projects.description": "没有论文条目的可运行 Talking Head 系统、应用和集成框架。已有论文的官方实现仍保留在下方论文目录中。",
+    "projects.suggest": "推荐一个项目",
+    "projects.count": "个可运行项目",
+    "projects.scope": "不计入论文数量和论文筛选",
+    "projects.more": "显示全部项目",
+    "projects.less": "收起项目",
+    "projects.repository": "代码仓库",
+    "projects.loadError": "开源项目加载失败。",
+    "resources.weights": "模型权重",
+    "resources.apks": "APK",
+    "resources.site": "网站",
+    "resources.docs": "文档",
+    "resources.demo": "演示",
+    "resources.gallery": "形象库",
+    "resources.successor": "后续版本",
+    "resources.page": "主页",
     "catalog.eyebrow": "探索论文档案",
     "catalog.title": "找到你需要的论文",
     "catalog.description": "搜索完整论文目录，也可以按研究方向、年份和可用资源进一步筛选。",
@@ -185,6 +227,7 @@ function setLanguage(lang) {
     renderAreas();
     render();
   }
+  if (state.projects.length) renderProjects();
 }
 
 function updateThemeLabel() {
@@ -227,6 +270,63 @@ function renderAreas() {
       $("explore").scrollIntoView({ behavior: "smooth", block: "start" });
     });
   });
+}
+
+function projectText(project, field) {
+  const value = project[field];
+  if (!value || typeof value !== "object") return value || "";
+  return value[state.lang] || value.en || "";
+}
+
+function renderProjects() {
+  const visible = state.projectsExpanded ? state.projects : state.projects.slice(0, 6);
+  $("project-count").textContent = state.projects.length.toLocaleString(
+    state.lang === "zh" ? "zh-CN" : "en-US"
+  );
+  $("project-grid").innerHTML = visible.map((project) => {
+    const tags = (project.tags || [])
+      .map((tag) => `<span>${escapeHtml(tag)}</span>`)
+      .join("");
+    const resourceLinks = (project.links || [])
+      .map((item) => link(item.url, t(`resources.${item.label}`), "chip chip--project"))
+      .join("");
+    const links = [
+      link(project.url, t("projects.repository"), "chip chip--code"),
+      resourceLinks,
+    ].filter(Boolean).join("");
+
+    return `<article class="project-card">
+      <div class="project-card__top">
+        <span class="project-card__year">${escapeHtml(project.year)}</span>
+        <span class="project-card__type">OPEN SOURCE</span>
+      </div>
+      <a class="project-card__title" href="${escapeHtml(project.url)}" target="_blank" rel="noopener noreferrer">
+        ${escapeHtml(project.name)}<span aria-hidden="true">↗</span>
+      </a>
+      <p>${escapeHtml(projectText(project, "description"))}</p>
+      <div class="project-tags">${tags}</div>
+      <div class="project-links">${links}</div>
+    </article>`;
+  }).join("");
+
+  const canExpand = state.projects.length > 6;
+  $("project-more").hidden = !canExpand;
+  $("project-more").textContent = state.projectsExpanded
+    ? t("projects.less")
+    : `${t("projects.more")} · ${state.projects.length}`;
+}
+
+async function loadProjects() {
+  try {
+    const res = await fetch("./projects.json");
+    if (!res.ok) throw new Error(`Projects returned ${res.status}`);
+    const data = await res.json();
+    state.projects = Array.isArray(data.projects) ? data.projects : [];
+    renderProjects();
+  } catch (err) {
+    $("project-grid").innerHTML = `<p class="projects__error">${escapeHtml(t("projects.loadError"))}</p>`;
+    console.warn("Could not load projects", err);
+  }
 }
 
 function link(href, label, className) {
@@ -574,6 +674,11 @@ async function init() {
   });
   $("theme-toggle").addEventListener("click", toggleTheme);
   render();
+  $("project-more").addEventListener("click", () => {
+    state.projectsExpanded = !state.projectsExpanded;
+    renderProjects();
+  });
+  loadProjects();
   loadStarHistory();
   loadGithubStats();
 }
