@@ -13,6 +13,10 @@ body:
 
         若论文已经收录，只是需要补充代码、中稿会议或其他勘误，请改用「更新论文信息」表单。
 
+        For runnable systems without a paper, use the [Suggest an open-source project](https://github.com/Kedreamix/Awesome-Talking-Head-Synthesis/issues/new?template=project-suggestion.yml) form.
+
+        没有论文的可运行系统，请改用「推荐开源项目」表单。
+
   - type: input
     id: title
     attributes:

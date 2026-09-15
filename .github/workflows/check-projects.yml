@@ -1,0 +1,24 @@
+name: Check project catalog
+
+on:
+  pull_request:
+  push:
+    paths:
+      - docs/projects.json
+      - README.md
+      - scripts/sync_projects.py
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Verify README matches projects.json
+        run: python scripts/sync_projects.py --check
