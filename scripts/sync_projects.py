@@ -37,7 +37,7 @@ def render_table(data: dict) -> str:
     ]
     for project in projects:
         resources = " · ".join(
-            f"[{RESOURCE_LABELS.get(item['label'], item['label'].title())}]({item['url']})"
+            f"[{item.get('name') or RESOURCE_LABELS.get(item['label'], item['label'].title())}]({item['url']})"
             for item in project.get("links", [])
         )
         description = project.get("description", {}).get("en", "")

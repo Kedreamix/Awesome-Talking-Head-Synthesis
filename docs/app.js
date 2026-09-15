@@ -55,6 +55,7 @@ const TRANSLATIONS = {
     "projects.more": "Show all projects",
     "projects.less": "Show fewer projects",
     "projects.repository": "Repository",
+    "projects.badge": "Open source",
     "projects.loadError": "Could not load open-source projects.",
     "resources.weights": "Weights",
     "resources.apks": "APKs",
@@ -124,6 +125,7 @@ const TRANSLATIONS = {
     "projects.more": "显示全部项目",
     "projects.less": "收起项目",
     "projects.repository": "代码仓库",
+    "projects.badge": "开源项目",
     "projects.loadError": "开源项目加载失败。",
     "resources.weights": "模型权重",
     "resources.apks": "APK",
@@ -288,7 +290,11 @@ function renderProjects() {
       .map((tag) => `<span>${escapeHtml(tag)}</span>`)
       .join("");
     const resourceLinks = (project.links || [])
-      .map((item) => link(item.url, t(`resources.${item.label}`), "chip chip--project"))
+      .map((item) => link(
+        item.url,
+        item.name || t(`resources.${item.label}`),
+        "chip chip--project"
+      ))
       .join("");
     const links = [
       link(project.url, t("projects.repository"), "chip chip--code"),
@@ -298,7 +304,7 @@ function renderProjects() {
     return `<article class="project-card">
       <div class="project-card__top">
         <span class="project-card__year">${escapeHtml(project.year)}</span>
-        <span class="project-card__type">OPEN SOURCE</span>
+        <span class="project-card__type">${escapeHtml(t("projects.badge"))}</span>
       </div>
       <a class="project-card__title" href="${escapeHtml(project.url)}" target="_blank" rel="noopener noreferrer">
         ${escapeHtml(project.name)}<span aria-hidden="true">↗</span>
@@ -311,9 +317,12 @@ function renderProjects() {
 
   const canExpand = state.projects.length > 6;
   $("project-more").hidden = !canExpand;
+  const hidden = state.projects.length - visible.length;
   $("project-more").textContent = state.projectsExpanded
     ? t("projects.less")
-    : `${t("projects.more")} · ${state.projects.length}`;
+    : (hidden > 0
+      ? `${t("projects.more")} · ${hidden}`
+      : t("projects.more"));
 }
 
 async function loadProjects() {
@@ -331,7 +340,7 @@ async function loadProjects() {
 
 function link(href, label, className) {
   if (!href) return "";
-  return `<a class="${className}" href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+  return `<a class="${className}" href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`;
 }
 
 function issueUrl(template, title) {
@@ -627,6 +636,19 @@ async function loadGithubStats() {
 }
 
 async function init() {
+  applyTranslations();
+  document.querySelectorAll(".lang-option").forEach((button) => {
+    button.addEventListener("click", () => setLanguage(button.dataset.lang));
+  });
+  $("theme-toggle").addEventListener("click", toggleTheme);
+  $("project-more").addEventListener("click", () => {
+    state.projectsExpanded = !state.projectsExpanded;
+    renderProjects();
+  });
+  loadProjects();
+  loadStarHistory();
+  loadGithubStats();
+
   const res = await fetch("./papers.json");
   const data = await res.json();
   state.papers = data.papers || [];
@@ -651,6 +673,7 @@ async function init() {
   );
 
   applyTranslations();
+  if (state.projects.length) renderProjects();
   renderAreas();
   $("filters").addEventListener("input", () => {
     state.visible = 50;
@@ -669,18 +692,7 @@ async function init() {
     state.visible += 50;
     render();
   });
-  document.querySelectorAll(".lang-option").forEach((button) => {
-    button.addEventListener("click", () => setLanguage(button.dataset.lang));
-  });
-  $("theme-toggle").addEventListener("click", toggleTheme);
   render();
-  $("project-more").addEventListener("click", () => {
-    state.projectsExpanded = !state.projectsExpanded;
-    renderProjects();
-  });
-  loadProjects();
-  loadStarHistory();
-  loadGithubStats();
 }
 
 init().catch((err) => {

@@ -1106,7 +1106,7 @@ html[data-theme="dark"] .chip--download { background: rgba(239, 124, 79, .12); c
 @media (max-width: 620px) {
   .shell { width: min(100% - 24px, 1180px); }
   .nav { height: 66px; }
-  .nav__links > a:not(.button) { display: none; }
+  .nav-explore { display: none; }
   .brand > span:last-child { display: none; }
   .nav__links { gap: 8px; }
   .button--dark { padding-inline: 12px; }

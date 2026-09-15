@@ -90,7 +90,7 @@
       },
       "tags": ["Mobile", "2D", "Real-time"],
       "links": [
-        {"label": "successor", "url": "https://github.com/anliyuan/FeatherTalk"}
+        {"label": "successor", "name": "FeatherTalk", "url": "https://github.com/anliyuan/FeatherTalk"}
       ]
     },
     {
@@ -103,7 +103,7 @@
       },
       "tags": ["Web", "Mobile", "2D"],
       "links": [
-        {"label": "successor", "url": "https://github.com/kleinlee/MatesX"}
+        {"label": "successor", "name": "MatesX", "url": "https://github.com/kleinlee/MatesX"}
       ]
     },
     {
