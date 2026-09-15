@@ -1176,7 +1176,7 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Kedreamix/Awesome-Talking-Head-Synthesis&type=Date)](https://star-history.com/#Kedreamix/Awesome-Talking-Head-Synthesis&Date)
+[![Star History Chart](https://star-history.dera.page/svg?repos=Kedreamix/Awesome-Talking-Head-Synthesis&type=Date)](https://star-history.dera.page/#Kedreamix/Awesome-Talking-Head-Synthesis&Date)
 
 
 
