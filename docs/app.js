@@ -55,7 +55,6 @@ const TRANSLATIONS = {
     "projects.more": "Show all projects",
     "projects.less": "Show fewer projects",
     "projects.repository": "Repository",
-    "projects.badge": "Open source",
     "projects.loadError": "Could not load open-source projects.",
     "resources.weights": "Weights",
     "resources.apks": "APKs",
@@ -125,7 +124,6 @@ const TRANSLATIONS = {
     "projects.more": "显示全部项目",
     "projects.less": "收起项目",
     "projects.repository": "代码仓库",
-    "projects.badge": "开源项目",
     "projects.loadError": "开源项目加载失败。",
     "resources.weights": "模型权重",
     "resources.apks": "APK",
@@ -209,11 +207,17 @@ function applyTranslations() {
     if (option) option.textContent = sectionName(section.slug, section.name);
   });
   updateThemeLabel();
+  updateGeneratedText();
 }
 
 function updateGeneratedText() {
-  if (!state.generatedAt) return;
-  $("generated").textContent = state.lang === "zh"
+  const el = $("generated");
+  if (!el) return;
+  if (!state.generatedAt) {
+    el.textContent = t("community.loading");
+    return;
+  }
+  el.textContent = state.lang === "zh"
     ? `目录最近更新于 ${state.generatedAt}`
     : `Catalog last updated ${state.generatedAt}`;
 }
@@ -304,7 +308,6 @@ function renderProjects() {
     return `<article class="project-card">
       <div class="project-card__top">
         <span class="project-card__year">${escapeHtml(project.year)}</span>
-        <span class="project-card__type">${escapeHtml(t("projects.badge"))}</span>
       </div>
       <a class="project-card__title" href="${escapeHtml(project.url)}" target="_blank" rel="noopener noreferrer">
         ${escapeHtml(project.name)}<span aria-hidden="true">↗</span>
