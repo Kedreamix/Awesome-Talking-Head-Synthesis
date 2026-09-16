@@ -2,7 +2,7 @@
 
 🌐 **Website:** [https://kedreamix.github.io/Awesome-Talking-Head-Synthesis/](https://kedreamix.github.io/Awesome-Talking-Head-Synthesis/)
 
-The README below is the complete paper list. For search, filters, bilingual browsing, and category overview, please use the website.
+The README below is the complete paper list, plus a short section for runnable open-source systems that do not have a paper. For search, filters, bilingual browsing, and category overview, please use the website.
 
 - [Website](https://kedreamix.github.io/Awesome-Talking-Head-Synthesis/)
 - [Datasets](#datasets)
@@ -17,6 +17,7 @@ The README below is the complete paper list. For search, filters, bilingual brow
 - [Talking Body \& Avatar](#talking-body--avatar)
 - [Robot-Driven Face \& Body](#robot-driven-face--body)
 - [Metrics](#metrics)
+- [Open-source Projects](#open-source-projects)
 - [Tools \& Software](#tools--software)
 - [Slides \& Presentations](#slides--presentations)
 - [References](#references)
@@ -40,7 +41,9 @@ The paper list has grown large enough that browsing only in the README is no lon
 
 👉 [https://kedreamix.github.io/Awesome-Talking-Head-Synthesis/](https://kedreamix.github.io/Awesome-Talking-Head-Synthesis/)
 
-You can search papers, filter by category and year, switch between English / 中文, and use dark mode. If you find a missing paper, newly released code, an accepted venue, or want to suggest a new category, please submit it through the website or GitHub Issues. 🙌
+You can search papers, browse runnable open-source projects, filter by category and year, switch between English / 中文, and use dark mode. If you find a missing paper or project, newly released code, an accepted venue, or want to suggest a new category, please submit it through the website or GitHub Issues. 🙌
+
+I also added **Open-source Projects** for runnable talking-head systems that are useful to try, but do not have a paper (for example Linly-Talker and NanoAvatar). SadTalker, MuseTalk, Hallo, and similar works stay in the paper tables.
 
 ⭐ If the site helps you, please star the repo — it really motivates continued updates!
 
@@ -1120,6 +1123,31 @@ Please feel free to star ⭐ and share this repo if you find it a valuable resou
 | 2026 | [Temporally-Aligned Evaluation for Audio-Driven Talking Head Generation](https://arxiv.org/abs/2606.01031) | ArXiv 2026 | talking-head evaluation, Soft DTW, temporal alignment |
 | 2026 | [FMReward: Aligning and Evaluating Audio-Driven 3D Facial Animation with Human Preferences](https://arxiv.org/abs/2608.15296) | IEEE TVCG | 3D facial animation, human preference, reward model |
 | 2025 | [NTIRE 2025 XGC Quality Assessment Challenge: Methods and Results](http://arxiv.org/abs/2506.02875) | ArXiv 2025 | quality assessment, talking head, challenge, THQA-NTIRE |
+
+---
+
+
+
+## Open-source Projects
+
+Runnable talking-head systems, apps, and integration frameworks that do not have a paper listing. Research papers with official code stay in the sections above (Audio-driven, Conversational, and so on).
+
+<!-- OPEN_SOURCE_PROJECTS:START -->
+| Year | Project | Code | Resources | Description |
+| ---- | ---- | ---- | ---- | ---- |
+| 2026 | [NanoAvatar](https://github.com/wpydcr/NanoAvatar) | [Code](https://github.com/wpydcr/NanoAvatar) | [Weights](https://huggingface.co/wpydcr/NanoAvatar) · [APKs](https://github.com/wpydcr/NanoAvatar/releases/latest) | On-device audio-driven talking avatars for Android and local NVIDIA GPUs, with offline APKs. |
+| 2026 | [Linly-Talker-Stream](https://github.com/Kedreamix/Linly-Talker-Stream) | [Code](https://github.com/Kedreamix/Linly-Talker-Stream) |  | Full-duplex, low-latency conversational digital human built on a real-time WebRTC streaming pipeline. |
+| 2026 | [CyberVerse](https://github.com/Lynpoint/CyberVerse) | [Code](https://github.com/Lynpoint/CyberVerse) | [Site](https://www.cyberverse.cc) | Self-hosted real-time digital-human agent platform with WebRTC, memory, tools, RAG, and optional avatar video. |
+| 2025 | [OpenAvatarChat](https://github.com/HumanAIGC-Engineering/OpenAvatarChat) | [Code](https://github.com/HumanAIGC-Engineering/OpenAvatarChat) | [Docs](https://humanaigc-engineering.github.io/OpenAvatarChat/) · [Demo](https://huggingface.co/spaces/HumanAIGC-Engineering-Team/open-avatar-chat) | Modular interactive avatar chat with replaceable ASR, LLM, TTS, and avatar backends. |
+| 2025 | [LiteAvatar](https://github.com/HumanAIGC/lite-avatar) | [Code](https://github.com/HumanAIGC/lite-avatar) | [Gallery](https://modelscope.cn/models/HumanAIGC-Engineering/LiteAvatarGallery/summary) | Real-time CPU audio-to-face 2D chat avatar and an avatar backend for OpenAvatarChat. |
+| 2024 | [Duix-Avatar](https://github.com/duixcom/Duix-Avatar) | [Code](https://github.com/duixcom/Duix-Avatar) | [Site](https://www.duix.com/) | Offline avatar toolkit for appearance and voice cloning plus text- or audio-driven video generation. |
+| 2024 | [Ultralight-Digital-Human](https://github.com/anliyuan/Ultralight-Digital-Human) | [Code](https://github.com/anliyuan/Ultralight-Digital-Human) | [FeatherTalk](https://github.com/anliyuan/FeatherTalk) | Mobile-friendly real-time 2D digital human, with FeatherTalk as its lighter successor. |
+| 2024 | [DH_live](https://github.com/kleinlee/DH_live) | [Code](https://github.com/kleinlee/DH_live) | [MatesX](https://github.com/kleinlee/MatesX) | Lightweight real-time 2D digital human for web and mobile, followed by the multi-platform MatesX engine. |
+| 2023 | [Linly-Talker](https://github.com/Kedreamix/Linly-Talker) | [Code](https://github.com/Kedreamix/Linly-Talker) | [Weights](https://huggingface.co/Kedreamix/Linly-Talker) · [Page](https://kedreamix.github.io/) | Conversational digital human WebUI combining LLM, ASR, TTS, voice cloning, and multiple talking-head backends. |
+| 2023 | [LiveTalking](https://github.com/lipku/LiveTalking) | [Code](https://github.com/lipku/LiveTalking) | [Site](https://www.livetalking.ai) | Real-time interactive streaming digital human engine supporting Wav2Lip, MuseTalk, ER-NeRF, and other backends. |
+| 2023 | [TalkingHead](https://github.com/met4citizen/TalkingHead) | [Code](https://github.com/met4citizen/TalkingHead) |  | Browser JavaScript class for real-time lip-sync using full-body 3D avatars. |
+| 2022 | [VU-VRM](https://github.com/Automattic/VU-VRM) | [Code](https://github.com/Automattic/VU-VRM) | [Demo](https://automattic.github.io/VU-VRM/) | Browser-based real-time lip-sync VRM avatar driven by a microphone without a webcam. |
+<!-- OPEN_SOURCE_PROJECTS:END -->
 
 ---
 

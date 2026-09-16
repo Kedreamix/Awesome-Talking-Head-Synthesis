@@ -1,0 +1,56 @@
+name: Suggest an open-source project / 推荐开源项目
+description: Recommend a runnable talking-head system without a paper / 推荐没有论文的可运行 Talking Head 系统
+title: "[Project] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for runnable open-source systems, apps, or integration frameworks that do not have a paper. If the work has an arXiv, conference, or journal paper, please use the paper form instead.
+
+        此表单适用于没有论文的可运行开源系统、应用或集成框架。如果该工作已有 arXiv、会议或期刊论文，请改用论文推荐表单。
+
+  - type: input
+    id: name
+    attributes:
+      label: Project name / 项目名称
+      placeholder: Project name / 项目名称
+    validations:
+      required: true
+
+  - type: input
+    id: repository
+    attributes:
+      label: Repository URL / 代码仓库
+      placeholder: https://github.com/owner/repository
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What does it do? / 项目简介
+      description: Describe how it relates to talking-head synthesis and how people can run or try it. / 请说明项目与 Talking Head 的关系，以及如何运行或体验。
+    validations:
+      required: true
+
+  - type: input
+    id: resources
+    attributes:
+      label: Resources / 相关资源
+      description: Demo, documentation, model weights, APK, or project site. / 演示、文档、模型权重、APK 或项目主页。
+
+  - type: input
+    id: paper
+    attributes:
+      label: Paper URL, if any / 论文链接（如有）
+      description: Projects with a paper will normally be added to the paper catalog instead. / 已有论文的项目通常会收录到论文目录。
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks / 提交确认
+      options:
+        - label: The repository contains runnable source code, not only a product page or paper implementation. / 仓库包含可运行源码，而不只是产品主页或单篇论文实现。
+          required: true
+        - label: I searched the catalog and existing issues to avoid duplicates. / 我已搜索目录和已有 Issue，避免重复提交。
+          required: true

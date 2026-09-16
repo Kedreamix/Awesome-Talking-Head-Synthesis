@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Talking Head Synthesis</title>
-  <meta name="description" content="Searchable catalog of talking-head synthesis papers, code, and project pages.">
+  <meta name="description" content="Searchable catalog of talking-head synthesis papers, code, and runnable open-source systems.">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <script>
     (() => {
       const saved = localStorage.getItem("catalog-theme");
@@ -21,7 +22,8 @@
       <span>Talking Head Synthesis</span>
     </a>
     <div class="nav__links">
-      <a href="#explore" data-i18n="nav.explore">Explore papers</a>
+      <a class="nav-explore" href="#explore" data-i18n="nav.explore">Explore papers</a>
+      <a class="nav-projects" href="#projects" data-i18n="nav.projects">Open-source projects</a>
       <div class="nav__controls">
         <div class="lang-switch" role="group" aria-label="Language">
           <button class="lang-option is-active" type="button" data-lang="en">EN</button>
@@ -49,6 +51,10 @@
         <a class="button button--accent" href="#explore">
           <span data-i18n="hero.browse">Browse the collection</span>
           <span aria-hidden="true">↓</span>
+        </a>
+        <a class="button button--outline" href="#projects">
+          <span data-i18n="hero.projects">Explore runnable projects</span>
+          <span aria-hidden="true">↘</span>
         </a>
         <a class="hero-star" href="https://github.com/Kedreamix/Awesome-Talking-Head-Synthesis" target="_blank" rel="noopener noreferrer">
           <span aria-hidden="true">★</span>
@@ -113,8 +119,32 @@
       <a class="button button--ghost button--large" href="https://github.com/Kedreamix/Awesome-Talking-Head-Synthesis/issues/new?template=paper-update.yml" target="_blank" rel="noopener noreferrer">
         <span data-i18n="community.update">Report an update</span><span aria-hidden="true">↗</span>
       </a>
+      <a class="button button--ghost button--large" href="https://github.com/Kedreamix/Awesome-Talking-Head-Synthesis/issues/new?template=project-suggestion.yml" target="_blank" rel="noopener noreferrer">
+        <span data-i18n="projects.suggest">Suggest a project</span><span aria-hidden="true">↗</span>
+      </a>
       <a class="community__issues" href="https://github.com/Kedreamix/Awesome-Talking-Head-Synthesis/issues" target="_blank" rel="noopener noreferrer" data-i18n="community.view">View existing suggestions</a>
     </div>
+  </section>
+
+  <section class="projects shell" id="projects">
+    <div class="projects__heading">
+      <div>
+        <p class="eyebrow"><span></span><b data-i18n="projects.eyebrow">Run the systems</b></p>
+        <h2 data-i18n="projects.title">Open-source projects</h2>
+      </div>
+      <div class="projects__intro">
+        <p data-i18n="projects.description">Runnable talking-head systems, apps, and integration frameworks without a paper listing. Paper implementations remain in the research catalog below.</p>
+        <a href="https://github.com/Kedreamix/Awesome-Talking-Head-Synthesis/issues/new?template=project-suggestion.yml" target="_blank" rel="noopener noreferrer">
+          <span data-i18n="projects.suggest">Suggest a project</span> ↗
+        </a>
+      </div>
+    </div>
+    <div class="project-summary">
+      <span><strong id="project-count">—</strong> <span data-i18n="projects.count">runnable projects</span></span>
+      <span data-i18n="projects.scope">Kept separate from paper counts and filters</span>
+    </div>
+    <div class="project-grid" id="project-grid"></div>
+    <button class="project-more" id="project-more" type="button" hidden data-i18n="projects.more">Show all projects</button>
   </section>
 
   <section class="areas shell" id="areas">
