@@ -564,6 +564,10 @@ h1 em {
   scroll-margin-top: 32px;
 }
 
+.stats + .projects {
+  margin-top: 18px;
+}
+
 .projects__heading {
   display: flex;
   align-items: end;
