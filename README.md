@@ -1134,8 +1134,8 @@ Runnable talking-head systems, apps, and integration frameworks that do not have
 | LMD (landmark distance error)                       | Lip Movements Generation at a Glance                         |                                                              |
 | LRA (lip-reading accuracy)                          | Talking Face Generation by Conditional Recurrent Adversarial Network | [paper](https://arxiv.org/pdf/1804.04786.pdf)                |
 | WER(word error rate)                                | Lipnet: end-to-end sentencelevel lipreading.                 |                                                              |
-| LSE-D (Lip Sync Error - Distance)                   | Out of time: automated lip sync in the wild                  |                                                              |
-| LSE-C (Lip Sync Error - Confidence)                 | Out of time: automated lip sync in the wild                  |                                                              |
+| LSE-D (Lip Sync Error - Distance)                   | Out of time: automated lip sync in the wild                  | [code](https://github.com/joonson/syncnet_python), [pip](https://github.com/nawta/SyncNet_py309_313) |
+| LSE-C (Lip Sync Error - Confidence)                 | Out of time: automated lip sync in the wild                  | [code](https://github.com/joonson/syncnet_python), [pip](https://github.com/nawta/SyncNet_py309_313) |
 | ACD(Average content distance)                       | Facenet: a unified embedding for face recognition and clustering. |                                                              |
 | CSIM(cosine similarity)                             | Arcface: additive angular margin loss for deep face recognition. |                                                              |
 | EAR(eye aspect ratio)                               | Real-time eye blink detection using facial landmarks. In: Computer Vision Winter Workshop |                                                              |
