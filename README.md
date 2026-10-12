@@ -1145,6 +1145,7 @@ Runnable talking-head systems, apps, and integration frameworks that do not have
 
 | Year | Paper | Conference | Keywords |
 |------|-------|------------|----------|
+| 2026 | [PVSync: A Unified Lip-Sync Expert for Timing and Articulation](https://arxiv.org/abs/2610.09223) | ArXiv 2026 | lip-sync evaluation, audio-visual synchronization, viseme, talking-head evaluation metric |
 | 2026 | [Temporally-Aligned Evaluation for Audio-Driven Talking Head Generation](https://arxiv.org/abs/2606.01031) | ArXiv 2026 | talking-head evaluation, Soft DTW, temporal alignment |
 | 2026 | [FMReward: Aligning and Evaluating Audio-Driven 3D Facial Animation with Human Preferences](https://arxiv.org/abs/2608.15296) | IEEE TVCG | 3D facial animation, human preference, reward model |
 | 2025 | [NTIRE 2025 XGC Quality Assessment Challenge: Methods and Results](http://arxiv.org/abs/2506.02875) | ArXiv 2025 | quality assessment, talking head, challenge, THQA-NTIRE |
