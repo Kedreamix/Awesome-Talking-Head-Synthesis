@@ -92,6 +92,7 @@ Runnable talking-head systems, apps, and integration frameworks that do not have
 
 | Year | Dataset | Conference/Journal | Download Link | Description |
 | ---- | ---- | ---- | ---- | ---- |
+| 2026 | [CAS](https://aigc-explorer.github.io/PAGE/) | TCSVT 2026 | [Download](https://huggingface.co/datasets/academic5000/CAS) | CAS is a large-scale dataset for co-speech gesture video generation. It features 85.5h of HD clips from over 800 speakers, covering diverse scenarios, views, poses, and styles. |
 | 2026 | [The GENEA Challenge 2026: A Large-Scale Disentangled Evaluation of Speech-Driven Gesture Generation on the Seamless Interaction Dataset](https://arxiv.org/abs/2608.10839) | ArXiv 2026 | [Download](https://genea-workshop.github.io/2026/challenge) | Large-scale disentangled human-evaluation challenge for speech-driven co-speech gesture generation (GENEA 2026). |
 | 2026 | [REACT 2026: The Fourth Multiple Appropriate Facial Reaction Generation Challenge: Personalised MAFRG and Appropriate EEG Reaction Prediction](https://arxiv.org/abs/2606.07935) | ArXiv 2026 | [Download](https://github.com/reactmultimodalchallenge/baseline_react2026) | Fourth Multiple Appropriate Facial Reaction Generation Challenge for personalized listener reactions in dyadic interaction. |
 | 2026 | [MTAVG-Bench 2.0: Diagnosing Failure Modes of Cinematic Expressiveness in Multi-Talker Audio-Video Generation](https://arxiv.org/abs/2605.28035) | ArXiv 2026 | [Download](https://huggingface.co/datasets/Lanht/MTAVG-Bench2) | Benchmark diagnosing cinematic-expressiveness failure modes in multi-talker audio-visual generation. |
@@ -197,6 +198,7 @@ Runnable talking-head systems, apps, and integration frameworks that do not have
 
 | Year | Title | Conference/Journal | Code | Project | Keywords |
 | ---- | ---- | ---- | ---- | ---- | ---- |
+| 2026 | [PAGE: Parts-Aware Guidance for Co-Speech Gesture Portrait Video Generation](https://arxiv.org/abs/2610.13301v1) | TCSVT 2026 |  | [Project](https://aigc-explorer.github.io/PAGE/) | audio-driven, part-aware guidance, unified framework, backbone- and denoiser-agnostic, lip synchronization |
 | 2026 | [EfficientSync: Real-Time Lip Synchronization via Deformation-Based Reference Texture Mixing](https://arxiv.org/abs/2608.18832) | ArXiv 2026 |  | [Project](https://alunaticat.github.io/EfficientSync/index.html) | lip synchronization, audio-driven, texture mixing, real-time |
 | 2026 | [DynaForcing: Overcoming Dynamic Collapse in Self-Forcing Distillation for Streaming Avatar Generation](https://arxiv.org/abs/2608.17707) | ACM MM 2026 |  |  | audio-driven, streaming avatar, lip-sync, self-forcing |
 | 2026 | [Xemo-Talker: Unlock Emotions Explicitly for Audio-Driven Talking Portrait Synthesis](https://arxiv.org/abs/2608.14700) | ArXiv 2026 | [Code](https://github.com/chaolongy/Xemo-Talker) |  | audio-driven, emotion control, talking portrait, lip-sync |
