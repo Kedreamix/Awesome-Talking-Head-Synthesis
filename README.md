@@ -1159,6 +1159,7 @@ Runnable talking-head systems, apps, and integration frameworks that do not have
 
 | Tool/Resource                                                | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [Beav](https://beav.pro/) | Desktop creator workspace that generates talking-avatar videos from an avatar image and prepared speech. Free to download; AI generation uses credits. |
 | [LUCIA](https://sourceforge.net/projects/lucia/)             | Development of a MPEG-4 Talking Head Engine. 💻               |
 | [Yepic Studio](https://www.g2.com/products/yepic-studio/reviews) | Create and dub talking head-style videos in minutes without expensive equipment. 🎥 |
 | [Mel McGee's Talkbots](https://sourceforge.net/projects/talkbots/) | A complete multi-browser, multi-platform talking head application in SVG suitable for web sites or as an avatar. 🗣️ |
