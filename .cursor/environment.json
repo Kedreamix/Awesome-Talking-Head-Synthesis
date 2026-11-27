@@ -1,0 +1,17 @@
+{
+  "name": "Awesome-Talking-Head-Synthesis",
+  "install": "python3 --version && node --version",
+  "terminals": [
+    {
+      "name": "docs-server",
+      "command": "python3 -m http.server 8000 --bind 0.0.0.0 --directory docs",
+      "description": "Serves the static catalog website (docs/) at http://localhost:8000. Open this URL to browse the papers site locally."
+    }
+  ],
+  "ports": [
+    {
+      "name": "docs",
+      "port": 8000
+    }
+  ]
+}
